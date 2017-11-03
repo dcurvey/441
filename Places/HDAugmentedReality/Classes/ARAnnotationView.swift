@@ -22,16 +22,6 @@ open class ARAnnotationView: UIView
         super.init(frame: CGRect.zero)
         self.initializeInternal()
       
-      // 3. add action to myView
-      // or for swift 2 +
-      let gestureSwift2AndHigher = UITapGestureRecognizer(target: self, action:  #selector (self.someAction (_:)))
-      self.myView.addGestureRecognizer(gestureSwift2AndHigher)
-      
-      
-      // or for Swift 3
-      func someAction(_ sender:UITapGestureRecognizer){
-        // do other task
-      }
     }
 
     public required init?(coder aDecoder: NSCoder)
