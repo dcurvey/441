@@ -27,6 +27,8 @@ class Place: ARAnnotation {
   let reference: String
   let placeName: String
   let address: String
+  let placeRate: Double
+  let placePrice: Int
   var phoneNumber: String?
   var website: String?
   
@@ -45,8 +47,10 @@ class Place: ARAnnotation {
     }
   }
   
-  init(location: CLLocation, reference: String, name: String, address: String) {
+  init(location: CLLocation, reference: String, name: String, address: String, rating: Double, price: Int) {
     placeName = name
+    placeRate = rating
+    placePrice = price
     self.reference = reference
     self.address = address
     

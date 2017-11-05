@@ -22,6 +22,16 @@
 
 import Foundation
 import CoreLocation
+//              let temp = restaurantInformation(name: String, price: NSNumber, rating: NSNumber, address: String, open: Bool)
+
+
+struct restaurantInformation {
+  var name: String
+  var price: Int
+  var rating: Double
+  var address: String
+  var open: Bool
+}
 
 struct PlacesLoader {
   let apiURL = "https://maps.googleapis.com/maps/api/place/"
@@ -48,6 +58,39 @@ struct PlacesLoader {
             guard let responseDict = responseObject as? NSDictionary else {
               return
             }
+            
+            
+            //////////WHERE THE START OF THE API LOOKING STARTS/////////////////
+            guard let placesArray = responseDict.object(forKey: "results") as? [NSDictionary]  else { return }
+            print (placesArray)
+            for placeDict in placesArray {
+              print(placeDict.allKeys)
+//              var name = ""
+//              var price = ""
+//              var rating = ""
+//              var address = ""
+//              var hours = ""
+              if let name = placeDict["name"] as! String?{
+                print (name)
+                if let price = placeDict["price_level"] as! Int?{
+                  print (price)
+                  if let address = placeDict["vicinity"] as! String?{
+                    print (address)
+                    if let rating = placeDict["rating"] as! Double?{
+                      print (rating)
+                      if let openingHours = placeDict["opening_hours"] as! NSDictionary?{
+                        if let open = openingHours["open_now"] as! Bool? {
+                          print (open)
+                          let temp = restaurantInformation(name: name, price: price, rating: rating, address: address, open: open)
+                          print (temp)
+                        }
+                      }
+                    }
+                  }
+                }
+              }              
+            }
+          //////////////// END OF RETRIEVING STUFF FROM THE API////////////////////
             
             handler(responseDict, nil)
       

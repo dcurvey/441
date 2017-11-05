@@ -101,9 +101,17 @@ extension ViewController: CLLocationManagerDelegate {
                 let reference = placeDict.object(forKey: "reference") as! String
                 let name = placeDict.object(forKey: "name") as! String
                 let address = placeDict.object(forKey: "vicinity") as! String
+                let rating = placeDict.object(forKey: "rating") as! Double
+                var price = 0
+                if((placeDict.object(forKey: "price_level")) != nil)
+                {
+                  price =
+                    placeDict.object(forKey: "price_level") as! Int
+                }
+
                 
                 let location = CLLocation(latitude: latitude, longitude: longitude)
-                let place = Place(location: location, reference: reference, name: name, address: address)
+                let place = Place(location: location, reference: reference, name: name, address: address, rating: rating, price: price)
                 
                 self.places.append(place)
                 let annotation = PlaceAnnotation(location: place.location!.coordinate, title: place.placeName)
