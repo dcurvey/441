@@ -2,9 +2,9 @@
 provides-top-level:
 - "PlaceAnnotation"
 provides-nominal:
-- "6Places15PlaceAnnotationC"
+- "9_AR_ugula15PlaceAnnotationC"
 provides-member:
-- ["6Places15PlaceAnnotationC", ""]
+- ["9_AR_ugula15PlaceAnnotationC", ""]
 provides-dynamic-lookup:
 - "coordinate"
 - "title"
@@ -62,13 +62,13 @@ depends-member:
 - ["So16NSObjectProtocolP", "subtitle"]
 - ["So16NSObjectProtocolP", "title"]
 - ["So16NSObjectProtocolP", ""]
-- ["6Places15PlaceAnnotationC", "CLLocationCoordinate2D"]
-- ["6Places15PlaceAnnotationC", "String"]
-- ["6Places15PlaceAnnotationC", "coordinate"]
-- ["6Places15PlaceAnnotationC", "deinit"]
-- ["6Places15PlaceAnnotationC", "init"]
-- ["6Places15PlaceAnnotationC", "subtitle"]
-- ["6Places15PlaceAnnotationC", "title"]
+- ["9_AR_ugula15PlaceAnnotationC", "CLLocationCoordinate2D"]
+- ["9_AR_ugula15PlaceAnnotationC", "String"]
+- ["9_AR_ugula15PlaceAnnotationC", "coordinate"]
+- ["9_AR_ugula15PlaceAnnotationC", "deinit"]
+- ["9_AR_ugula15PlaceAnnotationC", "init"]
+- ["9_AR_ugula15PlaceAnnotationC", "subtitle"]
+- ["9_AR_ugula15PlaceAnnotationC", "title"]
 - !private ["s12StaticStringV", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -91,7 +91,7 @@ depends-nominal:
 - "So12MKAnnotationP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- "6Places15PlaceAnnotationC"
+- "9_AR_ugula15PlaceAnnotationC"
 - !private "s12StaticStringV"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"

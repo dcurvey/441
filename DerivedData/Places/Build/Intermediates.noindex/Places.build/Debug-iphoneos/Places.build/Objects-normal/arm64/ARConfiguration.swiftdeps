@@ -12,9 +12,9 @@ provides-top-level:
 - "deltaAngle"
 - "ARDataSource"
 provides-nominal:
-- "6Places12ARDataSourceP"
+- "9_AR_ugula12ARDataSourceP"
 provides-member:
-- ["6Places12ARDataSourceP", ""]
+- ["9_AR_ugula12ARDataSourceP", ""]
 provides-dynamic-lookup:
 - "ar"
 depends-top-level:
@@ -51,11 +51,11 @@ depends-top-level:
 - "normalizeDegree"
 - "radiansToDegrees"
 depends-member:
-- ["6Places12ARDataSourceP", "ARAnnotation"]
-- ["6Places12ARDataSourceP", "ARAnnotationView"]
-- ["6Places12ARDataSourceP", "ARViewController"]
-- ["6Places12ARDataSourceP", "CLLocation"]
-- ["6Places12ARDataSourceP", "ar"]
+- ["9_AR_ugula12ARDataSourceP", "ARAnnotation"]
+- ["9_AR_ugula12ARDataSourceP", "ARAnnotationView"]
+- ["9_AR_ugula12ARDataSourceP", "ARViewController"]
+- ["9_AR_ugula12ARDataSourceP", "CLLocation"]
+- ["9_AR_ugula12ARDataSourceP", "ar"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -75,7 +75,7 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 depends-nominal:
-- "6Places12ARDataSourceP"
+- "9_AR_ugula12ARDataSourceP"
 - !private "Sb"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"

@@ -2,9 +2,9 @@
 provides-top-level:
 - "ARAnnotation"
 provides-nominal:
-- "6Places12ARAnnotationC"
+- "9_AR_ugula12ARAnnotationC"
 provides-member:
-- ["6Places12ARAnnotationC", ""]
+- ["9_AR_ugula12ARAnnotationC", ""]
 provides-dynamic-lookup:
 - "active"
 - "annotationView"
@@ -24,21 +24,21 @@ depends-top-level:
 - "NSObject"
 - "String"
 depends-member:
-- ["6Places12ARAnnotationC", "ARAnnotationView"]
-- ["6Places12ARAnnotationC", "Bool"]
-- ["6Places12ARAnnotationC", "CLLocation"]
-- ["6Places12ARAnnotationC", "Double"]
-- ["6Places12ARAnnotationC", "Int"]
-- ["6Places12ARAnnotationC", "String"]
-- ["6Places12ARAnnotationC", "active"]
-- ["6Places12ARAnnotationC", "annotationView"]
-- ["6Places12ARAnnotationC", "azimuth"]
-- ["6Places12ARAnnotationC", "deinit"]
-- ["6Places12ARAnnotationC", "distanceFromUser"]
-- ["6Places12ARAnnotationC", "init"]
-- ["6Places12ARAnnotationC", "location"]
-- ["6Places12ARAnnotationC", "title"]
-- ["6Places12ARAnnotationC", "verticalLevel"]
+- ["9_AR_ugula12ARAnnotationC", "ARAnnotationView"]
+- ["9_AR_ugula12ARAnnotationC", "Bool"]
+- ["9_AR_ugula12ARAnnotationC", "CLLocation"]
+- ["9_AR_ugula12ARAnnotationC", "Double"]
+- ["9_AR_ugula12ARAnnotationC", "Int"]
+- ["9_AR_ugula12ARAnnotationC", "String"]
+- ["9_AR_ugula12ARAnnotationC", "active"]
+- ["9_AR_ugula12ARAnnotationC", "annotationView"]
+- ["9_AR_ugula12ARAnnotationC", "azimuth"]
+- ["9_AR_ugula12ARAnnotationC", "deinit"]
+- ["9_AR_ugula12ARAnnotationC", "distanceFromUser"]
+- ["9_AR_ugula12ARAnnotationC", "init"]
+- ["9_AR_ugula12ARAnnotationC", "location"]
+- ["9_AR_ugula12ARAnnotationC", "title"]
+- ["9_AR_ugula12ARAnnotationC", "verticalLevel"]
 - !private ["s7CVarArgP", "init"]
 - ["s7CVarArgP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -69,7 +69,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 depends-nominal:
-- "6Places12ARAnnotationC"
+- "9_AR_ugula12ARAnnotationC"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"

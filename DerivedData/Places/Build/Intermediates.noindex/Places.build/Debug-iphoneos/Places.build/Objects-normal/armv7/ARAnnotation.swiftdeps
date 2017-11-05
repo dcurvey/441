@@ -1,0 +1,102 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ARAnnotation"
+provides-nominal:
+- "6Places12ARAnnotationC"
+provides-member:
+- ["6Places12ARAnnotationC", ""]
+provides-dynamic-lookup:
+- "active"
+- "annotationView"
+- "azimuth"
+- "distanceFromUser"
+- "location"
+- "title"
+- "verticalLevel"
+depends-top-level:
+- "ARAnnotation"
+- "ARAnnotationView"
+- "Bool"
+- "BooleanLiteralType"
+- "CLLocation"
+- "Double"
+- "Int"
+- "NSObject"
+- "String"
+depends-member:
+- ["6Places12ARAnnotationC", "ARAnnotationView"]
+- ["6Places12ARAnnotationC", "Bool"]
+- ["6Places12ARAnnotationC", "CLLocation"]
+- ["6Places12ARAnnotationC", "Double"]
+- ["6Places12ARAnnotationC", "Int"]
+- ["6Places12ARAnnotationC", "String"]
+- ["6Places12ARAnnotationC", "active"]
+- ["6Places12ARAnnotationC", "annotationView"]
+- ["6Places12ARAnnotationC", "azimuth"]
+- ["6Places12ARAnnotationC", "deinit"]
+- ["6Places12ARAnnotationC", "distanceFromUser"]
+- ["6Places12ARAnnotationC", "init"]
+- ["6Places12ARAnnotationC", "location"]
+- ["6Places12ARAnnotationC", "title"]
+- ["6Places12ARAnnotationC", "verticalLevel"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", ""]
+- !private ["s8HashableP", "init"]
+- ["s8HashableP", ""]
+- ["So8NSObjectC", "ARAnnotationView"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "CLLocation"]
+- ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "active"]
+- ["So8NSObjectC", "annotationView"]
+- ["So8NSObjectC", "azimuth"]
+- ["So8NSObjectC", "distanceFromUser"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "location"]
+- ["So8NSObjectC", "title"]
+- ["So8NSObjectC", "verticalLevel"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+depends-nominal:
+- "6Places12ARAnnotationC"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+interface-hash: "2dcc55c545018f8ecf5e4f138b42fe87"

@@ -30,11 +30,12 @@
 		8FFCD7D41DC4A85B009E3855 /* PlacesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D31DC4A85B009E3855 /* PlacesLoader.swift */; };
 		8FFCD7D61DC608FE009E3855 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */; };
 		B45A83331FAD13EC001A207E /* arugula_logo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B45A83321FAD13EB001A207E /* arugula_logo4.png */; };
+		B46531D21FAFC20A00355867 /* arugula_logo_annotations.png in Resources */ = {isa = PBXBuildFile; fileRef = B46531D11FAFC20900355867 /* arugula_logo_annotations.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F7404861DCF8834009A6F0B /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
-		8FFCD79D1DC4A204009E3855 /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FFCD79D1DC4A204009E3855 /* (AR)ugula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "(AR)ugula.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFCD7A01DC4A204009E3855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FFCD7A21DC4A204009E3855 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8FFCD7A51DC4A204009E3855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		8FFCD7D31DC4A85B009E3855 /* PlacesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesLoader.swift; sourceTree = "<group>"; };
 		8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 		B45A83321FAD13EB001A207E /* arugula_logo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arugula_logo4.png; sourceTree = "<group>"; };
+		B46531D11FAFC20900355867 /* arugula_logo_annotations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arugula_logo_annotations.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +90,7 @@
 		8FFCD79E1DC4A204009E3855 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FFCD79D1DC4A204009E3855 /* Places.app */,
+				8FFCD79D1DC4A204009E3855 /* (AR)ugula.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +98,7 @@
 		8FFCD79F1DC4A204009E3855 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				B46531D11FAFC20900355867 /* arugula_logo_annotations.png */,
 				B45A83321FAD13EB001A207E /* arugula_logo4.png */,
 				8FFCD7A01DC4A204009E3855 /* AppDelegate.swift */,
 				8FFCD7A21DC4A204009E3855 /* ViewController.swift */,
@@ -180,7 +183,7 @@
 			);
 			name = Places;
 			productName = Places;
-			productReference = 8FFCD79D1DC4A204009E3855 /* Places.app */;
+			productReference = 8FFCD79D1DC4A204009E3855 /* (AR)ugula.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -231,6 +234,7 @@
 				8FFCD7A61DC4A204009E3855 /* Main.storyboard in Resources */,
 				8FFCD7C81DC4A39A009E3855 /* hdar_close@2x.png in Resources */,
 				8FFCD7C61DC4A39A009E3855 /* DebugMapViewController.xib in Resources */,
+				B46531D21FAFC20A00355867 /* arugula_logo_annotations.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +387,7 @@
 				INFOPLIST_FILE = Places/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Places.test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "(AR)ugula";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
@@ -400,7 +404,7 @@
 				INFOPLIST_FILE = Places/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Places.test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "(AR)ugula";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};

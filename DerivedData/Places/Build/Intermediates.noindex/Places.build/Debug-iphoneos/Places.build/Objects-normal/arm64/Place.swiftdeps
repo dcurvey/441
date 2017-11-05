@@ -2,15 +2,17 @@
 provides-top-level:
 - "Place"
 provides-nominal:
-- "6Places5PlaceC"
+- "9_AR_ugula5PlaceC"
 provides-member:
-- ["6Places5PlaceC", ""]
+- ["9_AR_ugula5PlaceC", ""]
 provides-dynamic-lookup:
 - "address"
 - "description"
 - "infoText"
 - "phoneNumber"
 - "placeName"
+- "placePrice"
+- "placeRate"
 - "reference"
 - "website"
 depends-top-level:
@@ -19,22 +21,28 @@ depends-top-level:
 - "ARAnnotation"
 - "AssignmentPrecedence"
 - "CLLocation"
+- "Double"
+- "Int"
 - "Place"
 - "String"
 - !private "StringLiteralType"
 depends-member:
-- ["6Places12ARAnnotationC", "CLLocation"]
-- ["6Places12ARAnnotationC", "String"]
-- ["6Places12ARAnnotationC", "address"]
-- ["6Places12ARAnnotationC", "description"]
-- ["6Places12ARAnnotationC", "infoText"]
-- ["6Places12ARAnnotationC", "init"]
-- !private ["6Places12ARAnnotationC", "location"]
-- ["6Places12ARAnnotationC", "phoneNumber"]
-- ["6Places12ARAnnotationC", "placeName"]
-- ["6Places12ARAnnotationC", "reference"]
-- ["6Places12ARAnnotationC", "website"]
-- ["6Places12ARAnnotationC", ""]
+- ["9_AR_ugula12ARAnnotationC", "CLLocation"]
+- ["9_AR_ugula12ARAnnotationC", "Double"]
+- ["9_AR_ugula12ARAnnotationC", "Int"]
+- ["9_AR_ugula12ARAnnotationC", "String"]
+- ["9_AR_ugula12ARAnnotationC", "address"]
+- ["9_AR_ugula12ARAnnotationC", "description"]
+- ["9_AR_ugula12ARAnnotationC", "infoText"]
+- ["9_AR_ugula12ARAnnotationC", "init"]
+- !private ["9_AR_ugula12ARAnnotationC", "location"]
+- ["9_AR_ugula12ARAnnotationC", "phoneNumber"]
+- ["9_AR_ugula12ARAnnotationC", "placeName"]
+- ["9_AR_ugula12ARAnnotationC", "placePrice"]
+- ["9_AR_ugula12ARAnnotationC", "placeRate"]
+- ["9_AR_ugula12ARAnnotationC", "reference"]
+- ["9_AR_ugula12ARAnnotationC", "website"]
+- ["9_AR_ugula12ARAnnotationC", ""]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "address"]
@@ -42,6 +50,8 @@ depends-member:
 - !private ["s7CVarArgP", "location"]
 - !private ["s7CVarArgP", "phoneNumber"]
 - !private ["s7CVarArgP", "placeName"]
+- !private ["s7CVarArgP", "placePrice"]
+- !private ["s7CVarArgP", "placeRate"]
 - !private ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "website"]
 - ["s7CVarArgP", ""]
@@ -52,6 +62,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "location"]
 - !private ["s28CustomDebugStringConvertibleP", "phoneNumber"]
 - !private ["s28CustomDebugStringConvertibleP", "placeName"]
+- !private ["s28CustomDebugStringConvertibleP", "placePrice"]
+- !private ["s28CustomDebugStringConvertibleP", "placeRate"]
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "website"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -65,6 +77,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "location"]
 - !private ["s23CustomStringConvertibleP", "phoneNumber"]
 - !private ["s23CustomStringConvertibleP", "placeName"]
+- !private ["s23CustomStringConvertibleP", "placePrice"]
+- !private ["s23CustomStringConvertibleP", "placeRate"]
 - !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "website"]
 - ["s23CustomStringConvertibleP", ""]
@@ -78,6 +92,8 @@ depends-member:
 - !private ["s9EquatableP", "location"]
 - !private ["s9EquatableP", "phoneNumber"]
 - !private ["s9EquatableP", "placeName"]
+- !private ["s9EquatableP", "placePrice"]
+- !private ["s9EquatableP", "placeRate"]
 - !private ["s9EquatableP", "reference"]
 - !private ["s9EquatableP", "website"]
 - ["s9EquatableP", ""]
@@ -91,6 +107,8 @@ depends-member:
 - !private ["s8HashableP", "location"]
 - !private ["s8HashableP", "phoneNumber"]
 - !private ["s8HashableP", "placeName"]
+- !private ["s8HashableP", "placePrice"]
+- !private ["s8HashableP", "placeRate"]
 - !private ["s8HashableP", "reference"]
 - !private ["s8HashableP", "website"]
 - ["s8HashableP", ""]
@@ -103,6 +121,8 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "CLLocation"]
+- ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "address"]
 - ["So8NSObjectC", "description"]
@@ -111,6 +131,8 @@ depends-member:
 - !private ["So8NSObjectC", "location"]
 - ["So8NSObjectC", "phoneNumber"]
 - ["So8NSObjectC", "placeName"]
+- ["So8NSObjectC", "placePrice"]
+- ["So8NSObjectC", "placeRate"]
 - ["So8NSObjectC", "reference"]
 - ["So8NSObjectC", "website"]
 - !private ["So16NSObjectProtocolP", "address"]
@@ -118,23 +140,29 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "location"]
 - !private ["So16NSObjectProtocolP", "phoneNumber"]
 - !private ["So16NSObjectProtocolP", "placeName"]
+- !private ["So16NSObjectProtocolP", "placePrice"]
+- !private ["So16NSObjectProtocolP", "placeRate"]
 - !private ["So16NSObjectProtocolP", "reference"]
 - !private ["So16NSObjectProtocolP", "website"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
-- ["6Places5PlaceC", "CLLocation"]
-- ["6Places5PlaceC", "String"]
-- ["6Places5PlaceC", "address"]
-- ["6Places5PlaceC", "deinit"]
-- ["6Places5PlaceC", "description"]
-- ["6Places5PlaceC", "infoText"]
-- ["6Places5PlaceC", "init"]
-- !private ["6Places5PlaceC", "location"]
-- ["6Places5PlaceC", "phoneNumber"]
-- ["6Places5PlaceC", "placeName"]
-- ["6Places5PlaceC", "reference"]
-- ["6Places5PlaceC", "website"]
+- ["9_AR_ugula5PlaceC", "CLLocation"]
+- ["9_AR_ugula5PlaceC", "Double"]
+- ["9_AR_ugula5PlaceC", "Int"]
+- ["9_AR_ugula5PlaceC", "String"]
+- ["9_AR_ugula5PlaceC", "address"]
+- ["9_AR_ugula5PlaceC", "deinit"]
+- ["9_AR_ugula5PlaceC", "description"]
+- ["9_AR_ugula5PlaceC", "infoText"]
+- ["9_AR_ugula5PlaceC", "init"]
+- !private ["9_AR_ugula5PlaceC", "location"]
+- ["9_AR_ugula5PlaceC", "phoneNumber"]
+- ["9_AR_ugula5PlaceC", "placeName"]
+- ["9_AR_ugula5PlaceC", "placePrice"]
+- ["9_AR_ugula5PlaceC", "placeRate"]
+- ["9_AR_ugula5PlaceC", "reference"]
+- ["9_AR_ugula5PlaceC", "website"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s8SequenceP", "init"]
 - !private ["s12StaticStringV", "init"]
@@ -157,6 +185,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "location"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "phoneNumber"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "placeName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "placePrice"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "placeRate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "website"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -165,7 +195,7 @@ depends-member:
 - !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
-- "6Places12ARAnnotationC"
+- "9_AR_ugula12ARAnnotationC"
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
 - "s7CVarArgP"
@@ -194,7 +224,7 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
-- "6Places5PlaceC"
+- "9_AR_ugula5PlaceC"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s8SequenceP"
 - !private "s12StaticStringV"
@@ -237,4 +267,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "9643dc3d8fd928d95a5a006442d5d93a"
+interface-hash: "c531e0ef1d54f564257459e7342afacb"

@@ -8,12 +8,36 @@ provides-member:
 - ["6Places16ARViewControllerC", ""]
 - ["6Places16ARViewControllerC9UiOptionsV", ""]
 provides-dynamic-lookup:
+- "addCloseButton"
+- "addDebugUi"
+- "appDidEnterBackground"
+- "appWillEnterForeground"
 - "arTrackingManager"
+- "closeButtonImage"
+- "closeButtonTap"
+- "dataSource"
+- "debugButtonTap"
+- "debugEnabled"
+- "displayTimerTick"
+- "getAnnotations"
+- "headingSmoothingFactor"
 - "hitTest"
+- "initialize"
+- "initializeInternal"
+- "interfaceOrientationMask"
+- "layoutAndReloadOnOrientationChange"
+- "locationNotification"
 - "logText"
+- "maxDistance"
+- "maxVerticalLevel"
+- "maxVisibleAnnotations"
+- "onDidFailToFindLocation"
 - "prefersStatusBarHidden"
+- "reloadAnnotations"
+- "setAnnotations"
 - "shouldAutorotate"
 - "supportedInterfaceOrientations"
+- "trackingManager"
 - "viewDidAppear"
 - "viewDidDisappear"
 - "viewDidLayoutSubviews"
@@ -42,6 +66,7 @@ depends-top-level:
 - "ARViewController"
 - !private "AVCaptureDevice"
 - !private "AVCaptureDeviceInput"
+- !private "AVCaptureDevicePosition"
 - "AVCaptureSession"
 - !private "AVCaptureVideoOrientation"
 - "AVCaptureVideoPreviewLayer"
@@ -152,6 +177,7 @@ depends-member:
 - !private ["6Places25ARTrackingManagerDelegateP", "ARViewController"]
 - !private ["6Places25ARTrackingManagerDelegateP", "AVCaptureDevice"]
 - !private ["6Places25ARTrackingManagerDelegateP", "AVCaptureDeviceInput"]
+- !private ["6Places25ARTrackingManagerDelegateP", "AVCaptureDevicePosition"]
 - ["6Places25ARTrackingManagerDelegateP", "AVCaptureSession"]
 - !private ["6Places25ARTrackingManagerDelegateP", "AVCaptureVideoOrientation"]
 - !private ["6Places25ARTrackingManagerDelegateP", "AVCaptureVideoPreviewLayer"]
@@ -289,6 +315,7 @@ depends-member:
 - !private ["6Places16ARViewControllerC", "ARViewController"]
 - !private ["6Places16ARViewControllerC", "AVCaptureDevice"]
 - !private ["6Places16ARViewControllerC", "AVCaptureDeviceInput"]
+- !private ["6Places16ARViewControllerC", "AVCaptureDevicePosition"]
 - ["6Places16ARViewControllerC", "AVCaptureSession"]
 - !private ["6Places16ARViewControllerC", "AVCaptureVideoOrientation"]
 - ["6Places16ARViewControllerC", "AVCaptureVideoPreviewLayer"]
@@ -461,6 +488,7 @@ depends-member:
 - !private ["So26AVCaptureVideoPreviewLayerC", "init"]
 - !private ["So26AVCaptureVideoPreviewLayerC", "removeFromSuperlayer"]
 - !private ["So26AVCaptureVideoPreviewLayerC", "superlayer"]
+- !private ["So26AVCaptureVideoPreviewLayerC", "videoGravity"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "first"]
@@ -489,6 +517,7 @@ depends-member:
 - !private ["So7CALayerC", "insertSublayer"]
 - !private ["So7CALayerC", "removeFromSuperlayer"]
 - !private ["So7CALayerC", "superlayer"]
+- !private ["So7CALayerC", "videoGravity"]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - !private ["So15CALayerDelegateP", "addTarget"]
 - !private ["So15CALayerDelegateP", "annotation"]
@@ -523,6 +552,7 @@ depends-member:
 - !private ["So13CAMediaTimingP", "insertSublayer"]
 - !private ["So13CAMediaTimingP", "removeFromSuperlayer"]
 - !private ["So13CAMediaTimingP", "superlayer"]
+- !private ["So13CAMediaTimingP", "videoGravity"]
 - !private ["So13CATransactionC", "begin"]
 - !private ["So13CATransactionC", "commit"]
 - !private ["So13CATransactionC", "setValue"]
@@ -550,6 +580,7 @@ depends-member:
 - !private ["s7CVarArgP", "ARViewController"]
 - !private ["s7CVarArgP", "AVCaptureDevice"]
 - !private ["s7CVarArgP", "AVCaptureDeviceInput"]
+- !private ["s7CVarArgP", "AVCaptureDevicePosition"]
 - ["s7CVarArgP", "AVCaptureSession"]
 - !private ["s7CVarArgP", "AVCaptureVideoOrientation"]
 - !private ["s7CVarArgP", "AVCaptureVideoPreviewLayer"]
@@ -757,6 +788,7 @@ depends-member:
 - !private ["s7CVarArgP", "updateAnnotationsForCurrentHeading"]
 - !private ["s7CVarArgP", "userLocation"]
 - !private ["s7CVarArgP", "verticalLevel"]
+- !private ["s7CVarArgP", "videoGravity"]
 - !private ["s7CVarArgP", "videoOrientation"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidAppear"]
@@ -785,6 +817,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "ARViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "AVCaptureDevice"]
 - !private ["s28CustomDebugStringConvertibleP", "AVCaptureDeviceInput"]
+- !private ["s28CustomDebugStringConvertibleP", "AVCaptureDevicePosition"]
 - ["s28CustomDebugStringConvertibleP", "AVCaptureSession"]
 - !private ["s28CustomDebugStringConvertibleP", "AVCaptureVideoOrientation"]
 - !private ["s28CustomDebugStringConvertibleP", "AVCaptureVideoPreviewLayer"]
@@ -994,6 +1027,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "userInfo"]
 - !private ["s28CustomDebugStringConvertibleP", "userLocation"]
 - !private ["s28CustomDebugStringConvertibleP", "verticalLevel"]
+- !private ["s28CustomDebugStringConvertibleP", "videoGravity"]
 - !private ["s28CustomDebugStringConvertibleP", "videoOrientation"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidAppear"]
@@ -1034,6 +1068,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "ARViewController"]
 - !private ["s23CustomStringConvertibleP", "AVCaptureDevice"]
 - !private ["s23CustomStringConvertibleP", "AVCaptureDeviceInput"]
+- !private ["s23CustomStringConvertibleP", "AVCaptureDevicePosition"]
 - ["s23CustomStringConvertibleP", "AVCaptureSession"]
 - !private ["s23CustomStringConvertibleP", "AVCaptureVideoOrientation"]
 - !private ["s23CustomStringConvertibleP", "AVCaptureVideoPreviewLayer"]
@@ -1243,6 +1278,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "userInfo"]
 - !private ["s23CustomStringConvertibleP", "userLocation"]
 - !private ["s23CustomStringConvertibleP", "verticalLevel"]
+- !private ["s23CustomStringConvertibleP", "videoGravity"]
 - !private ["s23CustomStringConvertibleP", "videoOrientation"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidAppear"]
@@ -1294,6 +1330,7 @@ depends-member:
 - !private ["s9EquatableP", "ARViewController"]
 - !private ["s9EquatableP", "AVCaptureDevice"]
 - !private ["s9EquatableP", "AVCaptureDeviceInput"]
+- !private ["s9EquatableP", "AVCaptureDevicePosition"]
 - ["s9EquatableP", "AVCaptureSession"]
 - !private ["s9EquatableP", "AVCaptureVideoOrientation"]
 - !private ["s9EquatableP", "AVCaptureVideoPreviewLayer"]
@@ -1370,6 +1407,7 @@ depends-member:
 - !private ["s9EquatableP", "autoresizingMask"]
 - !private ["s9EquatableP", "azimuth"]
 - !private ["s9EquatableP", "azimuthFromUserToLocation"]
+- !private ["s9EquatableP", "back"]
 - !private ["s9EquatableP", "backgroundColor"]
 - !private ["s9EquatableP", "begin"]
 - !private ["s9EquatableP", "bindUi"]
@@ -1515,6 +1553,7 @@ depends-member:
 - !private ["s9EquatableP", "userInfo"]
 - !private ["s9EquatableP", "userLocation"]
 - !private ["s9EquatableP", "verticalLevel"]
+- !private ["s9EquatableP", "videoGravity"]
 - !private ["s9EquatableP", "videoOrientation"]
 - !private ["s9EquatableP", "view"]
 - !private ["s9EquatableP", "viewDidAppear"]
@@ -1565,6 +1604,7 @@ depends-member:
 - !private ["s8HashableP", "ARViewController"]
 - !private ["s8HashableP", "AVCaptureDevice"]
 - !private ["s8HashableP", "AVCaptureDeviceInput"]
+- !private ["s8HashableP", "AVCaptureDevicePosition"]
 - ["s8HashableP", "AVCaptureSession"]
 - !private ["s8HashableP", "AVCaptureVideoOrientation"]
 - !private ["s8HashableP", "AVCaptureVideoPreviewLayer"]
@@ -1640,6 +1680,7 @@ depends-member:
 - !private ["s8HashableP", "autoresizingMask"]
 - !private ["s8HashableP", "azimuth"]
 - !private ["s8HashableP", "azimuthFromUserToLocation"]
+- !private ["s8HashableP", "back"]
 - !private ["s8HashableP", "backgroundColor"]
 - !private ["s8HashableP", "begin"]
 - !private ["s8HashableP", "bindUi"]
@@ -1776,6 +1817,7 @@ depends-member:
 - !private ["s8HashableP", "userInfo"]
 - !private ["s8HashableP", "userLocation"]
 - !private ["s8HashableP", "verticalLevel"]
+- !private ["s8HashableP", "videoGravity"]
 - !private ["s8HashableP", "videoOrientation"]
 - !private ["s8HashableP", "view"]
 - !private ["s8HashableP", "viewDidAppear"]
@@ -1816,6 +1858,7 @@ depends-member:
 - !private ["So8NSCodingP", "ARViewController"]
 - !private ["So8NSCodingP", "AVCaptureDevice"]
 - !private ["So8NSCodingP", "AVCaptureDeviceInput"]
+- !private ["So8NSCodingP", "AVCaptureDevicePosition"]
 - ["So8NSCodingP", "AVCaptureSession"]
 - !private ["So8NSCodingP", "AVCaptureVideoOrientation"]
 - !private ["So8NSCodingP", "AVCaptureVideoPreviewLayer"]
@@ -1983,6 +2026,7 @@ depends-member:
 - !private ["So8NSCodingP", "trackingManager"]
 - !private ["So8NSCodingP", "uiOptions"]
 - !private ["So8NSCodingP", "updateAnnotationsForCurrentHeading"]
+- !private ["So8NSCodingP", "videoGravity"]
 - !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewDidAppear"]
 - !private ["So8NSCodingP", "viewDidDisappear"]
@@ -2017,6 +2061,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "ARViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "AVCaptureDevice"]
 - !private ["So26NSExtensionRequestHandlingP", "AVCaptureDeviceInput"]
+- !private ["So26NSExtensionRequestHandlingP", "AVCaptureDevicePosition"]
 - ["So26NSExtensionRequestHandlingP", "AVCaptureSession"]
 - !private ["So26NSExtensionRequestHandlingP", "AVCaptureVideoOrientation"]
 - !private ["So26NSExtensionRequestHandlingP", "AVCaptureVideoPreviewLayer"]
@@ -2192,6 +2237,7 @@ depends-member:
 - !private ["So8NSObjectC", "ARViewController"]
 - !private ["So8NSObjectC", "AVCaptureDevice"]
 - !private ["So8NSObjectC", "AVCaptureDeviceInput"]
+- !private ["So8NSObjectC", "AVCaptureDevicePosition"]
 - ["So8NSObjectC", "AVCaptureSession"]
 - !private ["So8NSObjectC", "AVCaptureVideoOrientation"]
 - ["So8NSObjectC", "AVCaptureVideoPreviewLayer"]
@@ -2414,6 +2460,7 @@ depends-member:
 - ["So8NSObjectC", "updateAnnotationsForCurrentHeading"]
 - !private ["So8NSObjectC", "userLocation"]
 - !private ["So8NSObjectC", "verticalLevel"]
+- !private ["So8NSObjectC", "videoGravity"]
 - !private ["So8NSObjectC", "videoOrientation"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidAppear"]
@@ -2431,6 +2478,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "ARViewController"]
 - !private ["So16NSObjectProtocolP", "AVCaptureDevice"]
 - !private ["So16NSObjectProtocolP", "AVCaptureDeviceInput"]
+- !private ["So16NSObjectProtocolP", "AVCaptureDevicePosition"]
 - ["So16NSObjectProtocolP", "AVCaptureSession"]
 - !private ["So16NSObjectProtocolP", "AVCaptureVideoOrientation"]
 - !private ["So16NSObjectProtocolP", "AVCaptureVideoPreviewLayer"]
@@ -2636,6 +2684,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "updateAnnotationsForCurrentHeading"]
 - !private ["So16NSObjectProtocolP", "userLocation"]
 - !private ["So16NSObjectProtocolP", "verticalLevel"]
+- !private ["So16NSObjectProtocolP", "videoGravity"]
 - !private ["So16NSObjectProtocolP", "videoOrientation"]
 - !private ["So16NSObjectProtocolP", "view"]
 - !private ["So16NSObjectProtocolP", "viewDidAppear"]
@@ -2665,6 +2714,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "sort"]
 - !private ["So14NSSecureCodingP", "subscript"]
 - !private ["So14NSSecureCodingP", "superlayer"]
+- !private ["So14NSSecureCodingP", "videoGravity"]
 - !private ["So14NSSecureCodingP", "white"]
 - !private ["So14NSSecureCodingP", "withAlphaComponent"]
 - !private ["So16NSSortDescriptorC", "init"]
@@ -2690,6 +2740,7 @@ depends-member:
 - !private ["s9OptionSetP", "init"]
 - !private ["s9OptionSetP", "rawValue"]
 - !private ["s9OptionSetP", "touchUpInside"]
+- !private ["So15AVCaptureDeviceC8PositionO", "back"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - !private ["s22RandomAccessCollectionP", "first"]
@@ -2706,6 +2757,7 @@ depends-member:
 - !private ["s16RawRepresentableP", "UIApplicationDidEnterBackground"]
 - !private ["s16RawRepresentableP", "UIApplicationWillEnterForeground"]
 - ["s16RawRepresentableP", "all"]
+- !private ["s16RawRepresentableP", "back"]
 - !private ["s16RawRepresentableP", "custom"]
 - !private ["s16RawRepresentableP", "defaultRunLoopMode"]
 - !private ["s16RawRepresentableP", "flexibleBottomMargin"]
@@ -2818,6 +2870,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "ARViewController"]
 - !private ["So21UIAppearanceContainerP", "AVCaptureDevice"]
 - !private ["So21UIAppearanceContainerP", "AVCaptureDeviceInput"]
+- !private ["So21UIAppearanceContainerP", "AVCaptureDevicePosition"]
 - ["So21UIAppearanceContainerP", "AVCaptureSession"]
 - !private ["So21UIAppearanceContainerP", "AVCaptureVideoOrientation"]
 - !private ["So21UIAppearanceContainerP", "AVCaptureVideoPreviewLayer"]
@@ -3003,6 +3056,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "ARViewController"]
 - !private ["So18UIContentContainerP", "AVCaptureDevice"]
 - !private ["So18UIContentContainerP", "AVCaptureDeviceInput"]
+- !private ["So18UIContentContainerP", "AVCaptureDevicePosition"]
 - ["So18UIContentContainerP", "AVCaptureSession"]
 - !private ["So18UIContentContainerP", "AVCaptureVideoOrientation"]
 - !private ["So18UIContentContainerP", "AVCaptureVideoPreviewLayer"]
@@ -3222,6 +3276,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "ARViewController"]
 - !private ["So18UIFocusEnvironmentP", "AVCaptureDevice"]
 - !private ["So18UIFocusEnvironmentP", "AVCaptureDeviceInput"]
+- !private ["So18UIFocusEnvironmentP", "AVCaptureDevicePosition"]
 - ["So18UIFocusEnvironmentP", "AVCaptureSession"]
 - !private ["So18UIFocusEnvironmentP", "AVCaptureVideoOrientation"]
 - !private ["So18UIFocusEnvironmentP", "AVCaptureVideoPreviewLayer"]
@@ -3435,6 +3490,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "ARViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "AVCaptureDevice"]
 - !private ["So30UIPasteConfigurationSupportingP", "AVCaptureDeviceInput"]
+- !private ["So30UIPasteConfigurationSupportingP", "AVCaptureDevicePosition"]
 - ["So30UIPasteConfigurationSupportingP", "AVCaptureSession"]
 - !private ["So30UIPasteConfigurationSupportingP", "AVCaptureVideoOrientation"]
 - !private ["So30UIPasteConfigurationSupportingP", "AVCaptureVideoPreviewLayer"]
@@ -3607,6 +3663,7 @@ depends-member:
 - !private ["So11UIResponderC", "ARViewController"]
 - !private ["So11UIResponderC", "AVCaptureDevice"]
 - !private ["So11UIResponderC", "AVCaptureDeviceInput"]
+- !private ["So11UIResponderC", "AVCaptureDevicePosition"]
 - ["So11UIResponderC", "AVCaptureSession"]
 - !private ["So11UIResponderC", "AVCaptureVideoOrientation"]
 - ["So11UIResponderC", "AVCaptureVideoPreviewLayer"]
@@ -3796,6 +3853,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "ARViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "AVCaptureDevice"]
 - !private ["So30UIResponderStandardEditActionsP", "AVCaptureDeviceInput"]
+- !private ["So30UIResponderStandardEditActionsP", "AVCaptureDevicePosition"]
 - ["So30UIResponderStandardEditActionsP", "AVCaptureSession"]
 - !private ["So30UIResponderStandardEditActionsP", "AVCaptureVideoOrientation"]
 - !private ["So30UIResponderStandardEditActionsP", "AVCaptureVideoPreviewLayer"]
@@ -3975,6 +4033,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "ARViewController"]
 - !private ["So16UIStateRestoringP", "AVCaptureDevice"]
 - !private ["So16UIStateRestoringP", "AVCaptureDeviceInput"]
+- !private ["So16UIStateRestoringP", "AVCaptureDevicePosition"]
 - ["So16UIStateRestoringP", "AVCaptureSession"]
 - !private ["So16UIStateRestoringP", "AVCaptureVideoOrientation"]
 - !private ["So16UIStateRestoringP", "AVCaptureVideoPreviewLayer"]
@@ -4117,6 +4176,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "ARViewController"]
 - !private ["So18UITraitEnvironmentP", "AVCaptureDevice"]
 - !private ["So18UITraitEnvironmentP", "AVCaptureDeviceInput"]
+- !private ["So18UITraitEnvironmentP", "AVCaptureDevicePosition"]
 - ["So18UITraitEnvironmentP", "AVCaptureSession"]
 - !private ["So18UITraitEnvironmentP", "AVCaptureVideoOrientation"]
 - !private ["So18UITraitEnvironmentP", "AVCaptureVideoPreviewLayer"]
@@ -4323,6 +4383,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "ARViewController"]
 - !private ["So16UIViewControllerC", "AVCaptureDevice"]
 - !private ["So16UIViewControllerC", "AVCaptureDeviceInput"]
+- !private ["So16UIViewControllerC", "AVCaptureDevicePosition"]
 - ["So16UIViewControllerC", "AVCaptureSession"]
 - !private ["So16UIViewControllerC", "AVCaptureVideoOrientation"]
 - ["So16UIViewControllerC", "AVCaptureVideoPreviewLayer"]
@@ -4572,6 +4633,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ARViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AVCaptureDevice"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AVCaptureDeviceInput"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVCaptureDevicePosition"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "AVCaptureSession"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AVCaptureVideoOrientation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AVCaptureVideoPreviewLayer"]
@@ -4774,6 +4836,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateAnnotationsForCurrentHeading"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userLocation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "verticalLevel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "videoGravity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "videoOrientation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidAppear"]
@@ -4923,6 +4986,7 @@ depends-nominal:
 - !private "s7NumericP"
 - !private "So9OS_objectC"
 - "s9OptionSetP"
+- !private "So15AVCaptureDeviceC8PositionO"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
 - "s16RawRepresentableP"
@@ -5002,6 +5066,7 @@ depends-nominal:
 - !private "s20_SwiftNewtypeWrapperP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
+- !private "position"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -5022,4 +5087,16 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 interface-hash: "4522afd1918e6f5be29ea10e1e3ee912"

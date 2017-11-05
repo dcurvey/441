@@ -2,9 +2,9 @@
 provides-top-level:
 - "ARAnnotationView"
 provides-nominal:
-- "6Places16ARAnnotationViewC"
+- "9_AR_ugula16ARAnnotationViewC"
 provides-member:
-- ["6Places16ARAnnotationViewC", ""]
+- ["9_AR_ugula16ARAnnotationViewC", ""]
 provides-dynamic-lookup:
 - "annotation"
 - "awakeFromNib"
@@ -20,18 +20,18 @@ depends-top-level:
 - "NSCoder"
 - "UIView"
 depends-member:
-- ["6Places16ARAnnotationViewC", "ARAnnotation"]
-- ["6Places16ARAnnotationViewC", "Bool"]
-- ["6Places16ARAnnotationViewC", "CGRect"]
-- ["6Places16ARAnnotationViewC", "NSCoder"]
-- ["6Places16ARAnnotationViewC", "annotation"]
-- ["6Places16ARAnnotationViewC", "awakeFromNib"]
-- ["6Places16ARAnnotationViewC", "bindUi"]
-- ["6Places16ARAnnotationViewC", "deinit"]
-- ["6Places16ARAnnotationViewC", "init"]
-- ["6Places16ARAnnotationViewC", "initialize"]
-- !private ["6Places16ARAnnotationViewC", "initializeInternal"]
-- !private ["6Places16ARAnnotationViewC", "initialized"]
+- ["9_AR_ugula16ARAnnotationViewC", "ARAnnotation"]
+- ["9_AR_ugula16ARAnnotationViewC", "Bool"]
+- ["9_AR_ugula16ARAnnotationViewC", "CGRect"]
+- ["9_AR_ugula16ARAnnotationViewC", "NSCoder"]
+- ["9_AR_ugula16ARAnnotationViewC", "annotation"]
+- ["9_AR_ugula16ARAnnotationViewC", "awakeFromNib"]
+- ["9_AR_ugula16ARAnnotationViewC", "bindUi"]
+- ["9_AR_ugula16ARAnnotationViewC", "deinit"]
+- ["9_AR_ugula16ARAnnotationViewC", "init"]
+- ["9_AR_ugula16ARAnnotationViewC", "initialize"]
+- !private ["9_AR_ugula16ARAnnotationViewC", "initializeInternal"]
+- !private ["9_AR_ugula16ARAnnotationViewC", "initialized"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "CGRect"]
 - !private ["So15CALayerDelegateP", "bindUi"]
@@ -227,7 +227,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 depends-nominal:
-- "6Places16ARAnnotationViewC"
+- "9_AR_ugula16ARAnnotationViewC"
 - !private "Sb"
 - "So15CALayerDelegateP"
 - !private "SC6CGRectV"

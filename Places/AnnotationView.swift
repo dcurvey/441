@@ -74,7 +74,7 @@ class AnnotationView: ARAnnotationView {
     priceLabel?.font = UIFont.systemFont(ofSize: 12)
     self.addSubview(priceLabel!)
     
-    let imageName = "arugula_logo_2.png"
+    let imageName = "arugula_logo_annotations.png"
     let image = UIImage(named: imageName)
     let imageView = UIImageView(image: image!)
     imageView.frame = CGRect(x: 40, y: -80, width: 80, height: 80)
