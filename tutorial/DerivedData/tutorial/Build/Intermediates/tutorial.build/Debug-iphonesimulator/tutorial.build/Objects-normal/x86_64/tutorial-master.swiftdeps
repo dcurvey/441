@@ -1,6 +1,0 @@
-version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
-options: "c198d755efc2d1f0919de464bdd18496"
-build_time: [561756437, 161438000]
-inputs:
-  "/Users/Aren/Documents/tutorial/tutorial/ViewController.swift": [561756434, 0]
-  "/Users/Aren/Documents/tutorial/tutorial/AppDelegate.swift": [561756434, 0]

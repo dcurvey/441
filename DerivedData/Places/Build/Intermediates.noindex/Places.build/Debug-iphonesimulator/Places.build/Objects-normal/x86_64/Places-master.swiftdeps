@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65.2 clang-900.0.37)"
 options: "5f285a0621049c46cce2c00163f52c4e"
-build_time: [1509860906, 728227000]
+build_time: [1509906779, 626278000]
 inputs:
   "/Users/Aren/Downloads/Places/Places/HDAugmentedReality/Classes/ARViewController.swift": [1476507906, 0]
   "/Users/Aren/Downloads/Places/Places/AnnotationView.swift": [1509745241, 0]
@@ -9,7 +9,7 @@ inputs:
   "/Users/Aren/Downloads/Places/Places/HDAugmentedReality/Classes/ARAnnotation.swift": [1476507906, 0]
   "/Users/Aren/Downloads/Places/Places/HDAugmentedReality/Classes/Debug/DebugMapViewController.swift": [1476507906, 0]
   "/Users/Aren/Downloads/Places/Places/PlacesLoader.swift": [1508609077, 0]
-  "/Users/Aren/Downloads/Places/Places/HDAugmentedReality/Classes/ARAnnotationView.swift": [1509740812, 0]
+  "/Users/Aren/Downloads/Places/Places/HDAugmentedReality/Classes/ARAnnotationView.swift": [1509906773, 0]
   "/Users/Aren/Downloads/Places/Places/HDAugmentedReality/Classes/ARTrackingManager.swift": [1477734452, 0]
   "/Users/Aren/Downloads/Places/Places/Place.swift": [1477902401, 0]
   "/Users/Aren/Downloads/Places/Places/HDAugmentedReality/Classes/ARConfiguration.swift": [1476507906, 0]
