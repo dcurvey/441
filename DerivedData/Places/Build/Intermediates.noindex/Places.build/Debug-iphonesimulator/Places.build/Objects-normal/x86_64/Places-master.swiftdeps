@@ -1,9 +1,9 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65.2 clang-900.0.37)"
 options: "5f285a0621049c46cce2c00163f52c4e"
-build_time: [1509906779, 626278000]
+build_time: [1509911836, 209826000]
 inputs:
   "/Users/Aren/Downloads/Places/Places/HDAugmentedReality/Classes/ARViewController.swift": [1476507906, 0]
-  "/Users/Aren/Downloads/Places/Places/AnnotationView.swift": [1509745241, 0]
+  "/Users/Aren/Downloads/Places/Places/AnnotationView.swift": [1509909430, 0]
   "/Users/Aren/Downloads/Places/Places/ViewController.swift": [1509742767, 0]
   "/Users/Aren/Downloads/Places/Places/PlaceAnnotation.swift": [1477902401, 0]
   "/Users/Aren/Downloads/Places/Places/HDAugmentedReality/Classes/ARAnnotation.swift": [1476507906, 0]

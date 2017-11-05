@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>KL6NU6Q5M2.com.razeware.Places</string>
+	<string>CNDLA75X23.com.Places.test</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>KL6NU6Q5M2.com.razeware.Places</string>
+		<string>CNDLA75X23.com.Places.test</string>
 	</array>
 </dict>
 </plist>
