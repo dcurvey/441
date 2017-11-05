@@ -400,6 +400,7 @@ SWIFT_CLASS("_TtC6Places16ARViewController")
 SWIFT_CLASS("_TtC6Places14AnnotationView")
 @interface AnnotationView : ARAnnotationView
 @property (nonatomic, strong) UILabel * _Nullable titleLabel;
+@property (nonatomic, strong) UILabel * _Nullable test;
 @property (nonatomic, strong) UILabel * _Nullable distanceLabel;
 - (void)didMoveToSuperview;
 - (void)loadUI;

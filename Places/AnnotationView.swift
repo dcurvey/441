@@ -29,8 +29,14 @@ protocol AnnotationViewDelegate {
 
 class AnnotationView: ARAnnotationView {
   var titleLabel: UILabel?
+  var test: UILabel?
   var distanceLabel: UILabel?
   var delegate: AnnotationViewDelegate?
+  
+  
+  
+  
+  
   
   override func didMoveToSuperview() {
     super.didMoveToSuperview()
@@ -55,6 +61,21 @@ class AnnotationView: ARAnnotationView {
     distanceLabel?.textColor = UIColor.green
     distanceLabel?.font = UIFont.systemFont(ofSize: 12)
     self.addSubview(distanceLabel!)
+    
+    
+    test = UILabel(frame: CGRect(x: 10, y: 30, width: self.frame.size.width, height: 60))
+    test?.textColor = UIColor.green
+    test?.font = UIFont.systemFont(ofSize: 12)
+    test?.text = "TEST"
+    self.addSubview(test!)
+    
+    let imageName = "arugula_logo4.png"
+    let image = UIImage(named: imageName)
+    let imageView = UIImageView(image: image!)
+    imageView.frame = CGRect(x: 0, y: -100, width: 120, height: 120)
+    self.addSubview(imageView)
+    
+    
     
     if let annotation = annotation as? Place {
       titleLabel?.text = annotation.placeName

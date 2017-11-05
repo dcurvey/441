@@ -13,6 +13,7 @@ provides-dynamic-lookup:
 - "distanceLabel"
 - "layoutSubviews"
 - "loadUI"
+- "test"
 - "titleLabel"
 - "touchesEnded"
 depends-top-level:
@@ -30,6 +31,8 @@ depends-top-level:
 - !private "UIColor"
 - "UIEvent"
 - !private "UIFont"
+- !private "UIImage"
+- !private "UIImageView"
 - "UILabel"
 - "UITouch"
 depends-member:
@@ -43,6 +46,8 @@ depends-member:
 - !private ["6Places16ARAnnotationViewC", "UIColor"]
 - ["6Places16ARAnnotationViewC", "UIEvent"]
 - !private ["6Places16ARAnnotationViewC", "UIFont"]
+- !private ["6Places16ARAnnotationViewC", "UIImage"]
+- !private ["6Places16ARAnnotationViewC", "UIImageView"]
 - ["6Places16ARAnnotationViewC", "UILabel"]
 - ["6Places16ARAnnotationViewC", "UITouch"]
 - !private ["6Places16ARAnnotationViewC", "addSubview"]
@@ -54,6 +59,7 @@ depends-member:
 - ["6Places16ARAnnotationViewC", "init"]
 - ["6Places16ARAnnotationViewC", "layoutSubviews"]
 - ["6Places16ARAnnotationViewC", "loadUI"]
+- ["6Places16ARAnnotationViewC", "test"]
 - ["6Places16ARAnnotationViewC", "titleLabel"]
 - ["6Places16ARAnnotationViewC", "touchesEnded"]
 - ["6Places16ARAnnotationViewC", ""]
@@ -65,6 +71,8 @@ depends-member:
 - !private ["6Places14AnnotationViewC", "UIColor"]
 - ["6Places14AnnotationViewC", "UIEvent"]
 - !private ["6Places14AnnotationViewC", "UIFont"]
+- !private ["6Places14AnnotationViewC", "UIImage"]
+- !private ["6Places14AnnotationViewC", "UIImageView"]
 - ["6Places14AnnotationViewC", "UILabel"]
 - ["6Places14AnnotationViewC", "UITouch"]
 - !private ["6Places14AnnotationViewC", "addSubview"]
@@ -77,6 +85,7 @@ depends-member:
 - ["6Places14AnnotationViewC", "init"]
 - ["6Places14AnnotationViewC", "layoutSubviews"]
 - ["6Places14AnnotationViewC", "loadUI"]
+- ["6Places14AnnotationViewC", "test"]
 - ["6Places14AnnotationViewC", "titleLabel"]
 - ["6Places14AnnotationViewC", "touchesEnded"]
 - ["6Places22AnnotationViewDelegateP", "AnnotationView"]
@@ -86,6 +95,8 @@ depends-member:
 - !private ["So15CALayerDelegateP", "String"]
 - !private ["So15CALayerDelegateP", "UIColor"]
 - !private ["So15CALayerDelegateP", "UIFont"]
+- !private ["So15CALayerDelegateP", "UIImage"]
+- !private ["So15CALayerDelegateP", "UIImageView"]
 - !private ["So15CALayerDelegateP", "UILabel"]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - !private ["So15CALayerDelegateP", "annotation"]
@@ -100,6 +111,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "loadUI"]
 - !private ["So15CALayerDelegateP", "numberOfLines"]
 - !private ["So15CALayerDelegateP", "removeFromSuperview"]
+- !private ["So15CALayerDelegateP", "test"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "textColor"]
 - !private ["So15CALayerDelegateP", "titleLabel"]
@@ -111,6 +123,8 @@ depends-member:
 - !private ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "UIFont"]
+- !private ["s7CVarArgP", "UIImage"]
+- !private ["s7CVarArgP", "UIImageView"]
 - !private ["s7CVarArgP", "UILabel"]
 - !private ["s7CVarArgP", "addSubview"]
 - !private ["s7CVarArgP", "annotation"]
@@ -129,6 +143,7 @@ depends-member:
 - !private ["s7CVarArgP", "placeName"]
 - !private ["s7CVarArgP", "removeFromSuperview"]
 - !private ["s7CVarArgP", "systemFont"]
+- !private ["s7CVarArgP", "test"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "textColor"]
 - !private ["s7CVarArgP", "titleLabel"]
@@ -140,6 +155,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIFont"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImageView"]
 - !private ["s28CustomDebugStringConvertibleP", "UILabel"]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "annotation"]
@@ -159,6 +176,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "removeFromSuperview"]
 - !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "systemFont"]
+- !private ["s28CustomDebugStringConvertibleP", "test"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "textColor"]
 - !private ["s28CustomDebugStringConvertibleP", "titleLabel"]
@@ -175,6 +193,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "UIFont"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
+- !private ["s23CustomStringConvertibleP", "UIImageView"]
 - !private ["s23CustomStringConvertibleP", "UILabel"]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
 - !private ["s23CustomStringConvertibleP", "annotation"]
@@ -193,6 +213,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "placeName"]
 - !private ["s23CustomStringConvertibleP", "removeFromSuperview"]
 - !private ["s23CustomStringConvertibleP", "systemFont"]
+- !private ["s23CustomStringConvertibleP", "test"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "textColor"]
 - !private ["s23CustomStringConvertibleP", "titleLabel"]
@@ -208,6 +229,8 @@ depends-member:
 - !private ["s9EquatableP", "String"]
 - !private ["s9EquatableP", "UIColor"]
 - !private ["s9EquatableP", "UIFont"]
+- !private ["s9EquatableP", "UIImage"]
+- !private ["s9EquatableP", "UIImageView"]
 - !private ["s9EquatableP", "UILabel"]
 - !private ["s9EquatableP", "addSubview"]
 - !private ["s9EquatableP", "annotation"]
@@ -227,6 +250,7 @@ depends-member:
 - !private ["s9EquatableP", "removeFromSuperview"]
 - !private ["s9EquatableP", "size"]
 - !private ["s9EquatableP", "systemFont"]
+- !private ["s9EquatableP", "test"]
 - !private ["s9EquatableP", "text"]
 - !private ["s9EquatableP", "textColor"]
 - !private ["s9EquatableP", "titleLabel"]
@@ -240,6 +264,8 @@ depends-member:
 - !private ["s8HashableP", "String"]
 - !private ["s8HashableP", "UIColor"]
 - !private ["s8HashableP", "UIFont"]
+- !private ["s8HashableP", "UIImage"]
+- !private ["s8HashableP", "UIImageView"]
 - !private ["s8HashableP", "UILabel"]
 - !private ["s8HashableP", "addSubview"]
 - !private ["s8HashableP", "annotation"]
@@ -258,6 +284,7 @@ depends-member:
 - !private ["s8HashableP", "placeName"]
 - !private ["s8HashableP", "removeFromSuperview"]
 - !private ["s8HashableP", "systemFont"]
+- !private ["s8HashableP", "test"]
 - !private ["s8HashableP", "text"]
 - !private ["s8HashableP", "textColor"]
 - !private ["s8HashableP", "titleLabel"]
@@ -269,6 +296,8 @@ depends-member:
 - !private ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "UIFont"]
+- !private ["So8NSCodingP", "UIImage"]
+- !private ["So8NSCodingP", "UIImageView"]
 - !private ["So8NSCodingP", "UILabel"]
 - !private ["So8NSCodingP", "addSubview"]
 - !private ["So8NSCodingP", "annotation"]
@@ -284,6 +313,7 @@ depends-member:
 - !private ["So8NSCodingP", "loadUI"]
 - !private ["So8NSCodingP", "numberOfLines"]
 - !private ["So8NSCodingP", "removeFromSuperview"]
+- !private ["So8NSCodingP", "test"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "textColor"]
 - !private ["So8NSCodingP", "titleLabel"]
@@ -308,6 +338,8 @@ depends-member:
 - !private ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UIEvent"]
 - !private ["So8NSObjectC", "UIFont"]
+- !private ["So8NSObjectC", "UIImage"]
+- !private ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UITouch"]
 - !private ["So8NSObjectC", "addSubview"]
@@ -327,6 +359,7 @@ depends-member:
 - !private ["So8NSObjectC", "placeName"]
 - !private ["So8NSObjectC", "removeFromSuperview"]
 - !private ["So8NSObjectC", "systemFont"]
+- ["So8NSObjectC", "test"]
 - !private ["So8NSObjectC", "text"]
 - !private ["So8NSObjectC", "textColor"]
 - ["So8NSObjectC", "titleLabel"]
@@ -336,6 +369,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "String"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
 - !private ["So16NSObjectProtocolP", "UIFont"]
+- !private ["So16NSObjectProtocolP", "UIImage"]
+- !private ["So16NSObjectProtocolP", "UIImageView"]
 - !private ["So16NSObjectProtocolP", "UILabel"]
 - !private ["So16NSObjectProtocolP", "addSubview"]
 - !private ["So16NSObjectProtocolP", "annotation"]
@@ -354,6 +389,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "placeName"]
 - !private ["So16NSObjectProtocolP", "removeFromSuperview"]
 - !private ["So16NSObjectProtocolP", "systemFont"]
+- !private ["So16NSObjectProtocolP", "test"]
 - !private ["So16NSObjectProtocolP", "text"]
 - !private ["So16NSObjectProtocolP", "textColor"]
 - !private ["So16NSObjectProtocolP", "titleLabel"]
@@ -371,10 +407,14 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "frame"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "CGRect"]
 - !private ["So29UIAccessibilityIdentificationP", "String"]
 - !private ["So29UIAccessibilityIdentificationP", "UIColor"]
 - !private ["So29UIAccessibilityIdentificationP", "UIFont"]
+- !private ["So29UIAccessibilityIdentificationP", "UIImage"]
+- !private ["So29UIAccessibilityIdentificationP", "UIImageView"]
 - !private ["So29UIAccessibilityIdentificationP", "UILabel"]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
 - !private ["So29UIAccessibilityIdentificationP", "annotation"]
@@ -389,6 +429,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "loadUI"]
 - !private ["So29UIAccessibilityIdentificationP", "numberOfLines"]
 - !private ["So29UIAccessibilityIdentificationP", "removeFromSuperview"]
+- !private ["So29UIAccessibilityIdentificationP", "test"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "textColor"]
 - !private ["So29UIAccessibilityIdentificationP", "titleLabel"]
@@ -397,6 +438,8 @@ depends-member:
 - !private ["So12UIAppearanceP", "String"]
 - !private ["So12UIAppearanceP", "UIColor"]
 - !private ["So12UIAppearanceP", "UIFont"]
+- !private ["So12UIAppearanceP", "UIImage"]
+- !private ["So12UIAppearanceP", "UIImageView"]
 - !private ["So12UIAppearanceP", "UILabel"]
 - !private ["So12UIAppearanceP", "addSubview"]
 - !private ["So12UIAppearanceP", "annotation"]
@@ -411,6 +454,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "loadUI"]
 - !private ["So12UIAppearanceP", "numberOfLines"]
 - !private ["So12UIAppearanceP", "removeFromSuperview"]
+- !private ["So12UIAppearanceP", "test"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "textColor"]
 - !private ["So12UIAppearanceP", "titleLabel"]
@@ -419,6 +463,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "UIFont"]
+- !private ["So21UIAppearanceContainerP", "UIImage"]
+- !private ["So21UIAppearanceContainerP", "UIImageView"]
 - !private ["So21UIAppearanceContainerP", "UILabel"]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
 - !private ["So21UIAppearanceContainerP", "annotation"]
@@ -433,6 +479,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "loadUI"]
 - !private ["So21UIAppearanceContainerP", "numberOfLines"]
 - !private ["So21UIAppearanceContainerP", "removeFromSuperview"]
+- !private ["So21UIAppearanceContainerP", "test"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "textColor"]
 - !private ["So21UIAppearanceContainerP", "titleLabel"]
@@ -452,6 +499,8 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "String"]
 - !private ["So17UICoordinateSpaceP", "UIColor"]
 - !private ["So17UICoordinateSpaceP", "UIFont"]
+- !private ["So17UICoordinateSpaceP", "UIImage"]
+- !private ["So17UICoordinateSpaceP", "UIImageView"]
 - !private ["So17UICoordinateSpaceP", "UILabel"]
 - !private ["So17UICoordinateSpaceP", "addSubview"]
 - !private ["So17UICoordinateSpaceP", "annotation"]
@@ -466,6 +515,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "loadUI"]
 - !private ["So17UICoordinateSpaceP", "numberOfLines"]
 - !private ["So17UICoordinateSpaceP", "removeFromSuperview"]
+- !private ["So17UICoordinateSpaceP", "test"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "textColor"]
 - !private ["So17UICoordinateSpaceP", "titleLabel"]
@@ -474,6 +524,8 @@ depends-member:
 - !private ["So13UIDynamicItemP", "String"]
 - !private ["So13UIDynamicItemP", "UIColor"]
 - !private ["So13UIDynamicItemP", "UIFont"]
+- !private ["So13UIDynamicItemP", "UIImage"]
+- !private ["So13UIDynamicItemP", "UIImageView"]
 - !private ["So13UIDynamicItemP", "UILabel"]
 - !private ["So13UIDynamicItemP", "addSubview"]
 - !private ["So13UIDynamicItemP", "annotation"]
@@ -488,6 +540,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "loadUI"]
 - !private ["So13UIDynamicItemP", "numberOfLines"]
 - !private ["So13UIDynamicItemP", "removeFromSuperview"]
+- !private ["So13UIDynamicItemP", "test"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "textColor"]
 - !private ["So13UIDynamicItemP", "titleLabel"]
@@ -496,6 +549,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "UIFont"]
+- !private ["So18UIFocusEnvironmentP", "UIImage"]
+- !private ["So18UIFocusEnvironmentP", "UIImageView"]
 - !private ["So18UIFocusEnvironmentP", "UILabel"]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
 - !private ["So18UIFocusEnvironmentP", "annotation"]
@@ -510,6 +565,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "loadUI"]
 - !private ["So18UIFocusEnvironmentP", "numberOfLines"]
 - !private ["So18UIFocusEnvironmentP", "removeFromSuperview"]
+- !private ["So18UIFocusEnvironmentP", "test"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "textColor"]
 - !private ["So18UIFocusEnvironmentP", "titleLabel"]
@@ -518,6 +574,8 @@ depends-member:
 - !private ["So11UIFocusItemP", "String"]
 - !private ["So11UIFocusItemP", "UIColor"]
 - !private ["So11UIFocusItemP", "UIFont"]
+- !private ["So11UIFocusItemP", "UIImage"]
+- !private ["So11UIFocusItemP", "UIImageView"]
 - !private ["So11UIFocusItemP", "UILabel"]
 - !private ["So11UIFocusItemP", "addSubview"]
 - !private ["So11UIFocusItemP", "annotation"]
@@ -532,11 +590,16 @@ depends-member:
 - !private ["So11UIFocusItemP", "loadUI"]
 - !private ["So11UIFocusItemP", "numberOfLines"]
 - !private ["So11UIFocusItemP", "removeFromSuperview"]
+- !private ["So11UIFocusItemP", "test"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "textColor"]
 - !private ["So11UIFocusItemP", "titleLabel"]
 - ["So11UIFocusItemP", ""]
 - !private ["So6UIFontC", "systemFont"]
+- !private ["So7UIImageC", "init"]
+- !private ["So11UIImageViewC", "frame"]
+- !private ["So11UIImageViewC", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So7UILabelC", "backgroundColor"]
 - !private ["So7UILabelC", "font"]
 - !private ["So7UILabelC", "frame"]
@@ -549,6 +612,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIFont"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImageView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UILabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
 - !private ["So30UIPasteConfigurationSupportingP", "annotation"]
@@ -563,6 +628,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "loadUI"]
 - !private ["So30UIPasteConfigurationSupportingP", "numberOfLines"]
 - !private ["So30UIPasteConfigurationSupportingP", "removeFromSuperview"]
+- !private ["So30UIPasteConfigurationSupportingP", "test"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "textColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "titleLabel"]
@@ -575,6 +641,8 @@ depends-member:
 - !private ["So11UIResponderC", "UIColor"]
 - ["So11UIResponderC", "UIEvent"]
 - !private ["So11UIResponderC", "UIFont"]
+- !private ["So11UIResponderC", "UIImage"]
+- !private ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UITouch"]
 - !private ["So11UIResponderC", "addSubview"]
@@ -590,6 +658,7 @@ depends-member:
 - ["So11UIResponderC", "loadUI"]
 - !private ["So11UIResponderC", "numberOfLines"]
 - !private ["So11UIResponderC", "removeFromSuperview"]
+- ["So11UIResponderC", "test"]
 - !private ["So11UIResponderC", "text"]
 - !private ["So11UIResponderC", "textColor"]
 - ["So11UIResponderC", "titleLabel"]
@@ -598,6 +667,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "UIFont"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImageView"]
 - !private ["So30UIResponderStandardEditActionsP", "UILabel"]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
 - !private ["So30UIResponderStandardEditActionsP", "annotation"]
@@ -612,6 +683,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "loadUI"]
 - !private ["So30UIResponderStandardEditActionsP", "numberOfLines"]
 - !private ["So30UIResponderStandardEditActionsP", "removeFromSuperview"]
+- !private ["So30UIResponderStandardEditActionsP", "test"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "textColor"]
 - !private ["So30UIResponderStandardEditActionsP", "titleLabel"]
@@ -620,6 +692,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "UIFont"]
+- !private ["So18UITraitEnvironmentP", "UIImage"]
+- !private ["So18UITraitEnvironmentP", "UIImageView"]
 - !private ["So18UITraitEnvironmentP", "UILabel"]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
 - !private ["So18UITraitEnvironmentP", "annotation"]
@@ -634,6 +708,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "loadUI"]
 - !private ["So18UITraitEnvironmentP", "numberOfLines"]
 - !private ["So18UITraitEnvironmentP", "removeFromSuperview"]
+- !private ["So18UITraitEnvironmentP", "test"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "textColor"]
 - !private ["So18UITraitEnvironmentP", "titleLabel"]
@@ -646,6 +721,8 @@ depends-member:
 - !private ["So6UIViewC", "UIColor"]
 - ["So6UIViewC", "UIEvent"]
 - !private ["So6UIViewC", "UIFont"]
+- !private ["So6UIViewC", "UIImage"]
+- !private ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "UITouch"]
 - !private ["So6UIViewC", "addSubview"]
@@ -661,6 +738,7 @@ depends-member:
 - ["So6UIViewC", "loadUI"]
 - !private ["So6UIViewC", "numberOfLines"]
 - !private ["So6UIViewC", "removeFromSuperview"]
+- ["So6UIViewC", "test"]
 - !private ["So6UIViewC", "text"]
 - !private ["So6UIViewC", "textColor"]
 - ["So6UIViewC", "titleLabel"]
@@ -670,6 +748,8 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "String"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIFont"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIImage"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIImageView"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UILabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "annotation"]
@@ -684,6 +764,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "loadUI"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "numberOfLines"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "removeFromSuperview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "test"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "titleLabel"]
@@ -695,6 +776,7 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "green"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "init"]
@@ -703,6 +785,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImageView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UILabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "annotation"]
@@ -721,6 +805,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "placeName"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeFromSuperview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "systemFont"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "test"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
@@ -772,6 +857,7 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -782,6 +868,9 @@ depends-nominal:
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
 - !private "So6UIFontC"
+- !private "So7UIImageC"
+- !private "So11UIImageViewC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
@@ -795,6 +884,7 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "s10_IndexableP"
@@ -836,4 +926,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "54081fe23276391d644fdaba4b4440da"
+interface-hash: "76849d39641f90d88d3011d89c41cbfc"

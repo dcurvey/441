@@ -140,6 +140,10 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>arugula_logo4.png</key>
+		<data>
+		ccIH2jZy65ibu3A83aEDLh1gMNk=
+		</data>
 		<key>hdar_close.png</key>
 		<data>
 		xLh9PxzU1czSxYjie7BJiiU/dqE=
@@ -509,6 +513,17 @@
 			<key>hash2</key>
 			<data>
 			O3fBRpKXa6zVjzroe74IIBbcB2ThuQeRJ7uZOQZ0phc=
+			</data>
+		</dict>
+		<key>arugula_logo4.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ccIH2jZy65ibu3A83aEDLh1gMNk=
+			</data>
+			<key>hash2</key>
+			<data>
+			2+cy1rCk+jTLG2DeslastxtETYGcCmpBFfVWSxIXKPg=
 			</data>
 		</dict>
 		<key>hdar_close.png</key>

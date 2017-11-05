@@ -141,6 +141,7 @@ extension ViewController: AnnotationViewDelegate {
           annotation.website = infoDict.object(forKey: "website") as? String
           
           self.showInfoView(forPlace: annotation)
+          
         }
       }
       

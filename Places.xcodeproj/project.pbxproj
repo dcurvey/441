@@ -29,6 +29,7 @@
 		8FFCD7D21DC4A539009E3855 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D11DC4A539009E3855 /* Place.swift */; };
 		8FFCD7D41DC4A85B009E3855 /* PlacesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D31DC4A85B009E3855 /* PlacesLoader.swift */; };
 		8FFCD7D61DC608FE009E3855 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */; };
+		B45A83331FAD13EC001A207E /* arugula_logo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B45A83321FAD13EB001A207E /* arugula_logo4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		8FFCD7D11DC4A539009E3855 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		8FFCD7D31DC4A85B009E3855 /* PlacesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesLoader.swift; sourceTree = "<group>"; };
 		8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		B45A83321FAD13EB001A207E /* arugula_logo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arugula_logo4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		8FFCD79F1DC4A204009E3855 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				B45A83321FAD13EB001A207E /* arugula_logo4.png */,
 				8FFCD7A01DC4A204009E3855 /* AppDelegate.swift */,
 				8FFCD7A21DC4A204009E3855 /* ViewController.swift */,
 				8FFCD7D11DC4A539009E3855 /* Place.swift */,
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FFCD7AB1DC4A204009E3855 /* LaunchScreen.storyboard in Resources */,
+				B45A83331FAD13EC001A207E /* arugula_logo4.png in Resources */,
 				8FFCD7C71DC4A39A009E3855 /* hdar_close.png in Resources */,
 				8FFCD7C91DC4A39A009E3855 /* hdar_close@3x.png in Resources */,
 				8FFCD7A81DC4A204009E3855 /* Assets.xcassets in Resources */,
