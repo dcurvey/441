@@ -77,14 +77,16 @@ class AnnotationView: ARAnnotationView {
     let imageName = "arugula_logo_annotations.png"
     let image = UIImage(named: imageName)
     let imageView = UIImageView(image: image!)
-    imageView.frame = CGRect(x: 40, y: -80, width: 80, height: 80)
+    let dist = (annotation?.distanceFromUser)! / 1000 * 0.6214
+    let hgt = 40.0/(dist*10)
+    imageView.frame = CGRect(x: 40, y: -80, width: hgt, height: hgt)
     self.addSubview(imageView)
     
     
     
     if let annotation = annotation as? Place {
       titleLabel?.text = annotation.placeName
-      distanceLabel?.text = String(format: "%.2f km", annotation.distanceFromUser / 1000)
+      distanceLabel?.text = String(format: "%.2f mi", dist)
       ratingLabel?.text = String(format: "%.1f", annotation.placeRate) + "/5"
       var price = String(annotation.placePrice)
       switch price
