@@ -428,7 +428,30 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
             let sortDesc = NSSortDescriptor(key: "distanceFromUser", ascending: true)
             sortedArray.sort(using: [sortDesc])
             self.annotations = sortedArray as [AnyObject] as! [ARAnnotation]
+          
+          /*
+             Adding in logic to divide annotations array into three, and assign a size variable to each annotation to adjust size
+             -Aren
+ 
+         */
+            let arraySize = sortedArray.count
+            let threshold = arraySize / 3
+            for (index, element) in self.annotations.enumerated()
+            {
+              if index >= (threshold * 2)
+              {
+                element.annotationSize = 3
+              }
+              else if index >= threshold
+              {
+                element.annotationSize = 2
+              }
+              
+            
+            }
         }
+      
+      
     }
     
     fileprivate func updateAnnotationsForCurrentHeading()

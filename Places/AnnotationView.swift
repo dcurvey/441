@@ -64,7 +64,7 @@ class AnnotationView: ARAnnotationView {
     self.addSubview(distanceLabel!)
     
     
-    ratingLabel = UILabel(frame: CGRect(x: 10, y: 30, width: self.frame.size.width, height: 20))
+    ratingLabel = UILabel(frame: CGRect(x: 125, y: 30, width: self.frame.size.width, height: 20))
     ratingLabel?.textColor = UIColor.green
     ratingLabel?.font = UIFont.systemFont(ofSize: 12)
     self.addSubview(ratingLabel!)
@@ -78,32 +78,47 @@ class AnnotationView: ARAnnotationView {
     let image = UIImage(named: imageName)
     let imageView = UIImageView(image: image!)
     let dist = (annotation?.distanceFromUser)! / 1000 * 0.6214
-    let hgt = 40.0/(dist*10)
-    imageView.frame = CGRect(x: 40, y: -80, width: hgt, height: hgt)
+    let hgt = 80 / (annotation?.annotationSize)!
+    var xAxis = 40.0
+    switch (annotation?.annotationSize)!
+    {
+      case 2:
+        xAxis = 60.0
+      case 3:
+        xAxis = 70.0
+      default:
+        xAxis = 40.0
+    }
+    imageView.frame = CGRect(x: xAxis, y: -80 / (annotation?.annotationSize)!, width: hgt, height: hgt)
+    //imageView.frame = CGRect(x: 40, y: -80, width: 80, height: 80)
     self.addSubview(imageView)
     
     
     
     if let annotation = annotation as? Place {
-      titleLabel?.text = annotation.placeName
-      distanceLabel?.text = String(format: "%.2f mi", dist)
-      ratingLabel?.text = String(format: "%.1f", annotation.placeRate) + "/5"
+      
       var price = String(annotation.placePrice)
       switch price
       {
       case "1":
-        price = "$"
+        price = " $"
       case "2":
-        price = "$$"
+        price = " $$"
       case "3":
-        price = "$$$"
+        price = " $$$"
       case "4":
-        price = "$$$$"
+        price = " $$$$"
       case "5":
-        price = "$$$$$"
+        price = " $$$$$"
       default:
-        price = ""
+        price = " N/A"
       }
+      
+      titleLabel?.text = annotation.placeName
+      distanceLabel?.text = "               " + String(format: "%.2f mi", dist)
+      //distanceLabel?.text = String(format: "%.2f mi", dist) + "    " + String(format: "%.1f", annotation.placeRate) + "/5" + "    "
+      ratingLabel?.text = String(format: "%.1f", annotation.placeRate) + "/5"
+      
       priceLabel?.text = price
     }
   }
@@ -112,8 +127,8 @@ class AnnotationView: ARAnnotationView {
     super.layoutSubviews()
     titleLabel?.frame = CGRect(x: 10, y: 0, width: self.frame.size.width, height: 30)
     distanceLabel?.frame = CGRect(x: 10, y: 30, width: self.frame.size.width, height: 20)
-    ratingLabel?.frame = CGRect(x: 10, y: 50, width: self.frame.size.width, height: 20)
-    priceLabel?.frame = CGRect(x: 10, y: 70, width: self.frame.size.width, height: 20)
+    ratingLabel?.frame = CGRect(x: 125, y: 30, width: self.frame.size.width, height: 20)
+    priceLabel?.frame = CGRect(x: 10, y: 30, width: self.frame.size.width, height: 20)
 
   }
   

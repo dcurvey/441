@@ -64,12 +64,14 @@ struct PlacesLoader {
             guard let placesArray = responseDict.object(forKey: "results") as? [NSDictionary]  else { return }
             print (placesArray)
             for placeDict in placesArray {
-              print(placeDict.allKeys)
+             // print(placeDict.allKeys)
 //              var name = ""
 //              var price = ""
 //              var rating = ""
 //              var address = ""
 //              var hours = ""
+              print (placeDict)
+              print ("")
               if let name = placeDict["name"] as! String?{
                 print (name)
                 if let price = placeDict["price_level"] as! Int?{

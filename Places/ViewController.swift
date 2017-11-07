@@ -91,7 +91,7 @@ extension ViewController: CLLocationManagerDelegate {
         if !startedLoadingPOIs {
           startedLoadingPOIs = true
           let loader = PlacesLoader()
-          loader.loadPOIS(location: location, radius: 150) { placesDict, error in
+          loader.loadPOIS(location: location, radius: 1000) { placesDict, error in
             if let dict = placesDict {
               guard let placesArray = dict.object(forKey: "results") as? [NSDictionary]  else { return }
               
