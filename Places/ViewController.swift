@@ -48,6 +48,7 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
+
   @IBAction func showARController(_ sender: Any) {
     arViewController = ARViewController()
     arViewController.dataSource = self
@@ -64,12 +65,46 @@ class ViewController: UIViewController {
     
     self.present(arViewController, animated: true, completion: nil)
   }
+ 
   
   func showInfoView(forPlace place: Place) {
-    let alert = UIAlertController(title: place.placeName , message: place.infoText, preferredStyle: UIAlertControllerStyle.alert)
-    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+    //let newViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RestaurantViewController")
     
-    arViewController.present(alert, animated: true, completion: nil)
+  
+    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    let myVC = storyBoard.instantiateViewController(withIdentifier: "RestaurantViewController") as! RestaurantViewController
+    
+    myVC.NameString = place.placeName
+    myVC.PriceInt = place.placePrice
+    //myVC.RatingInt = place.placeRate
+    
+    if let x = place.phoneNumber{
+       myVC.NumberString = x
+    }
+    
+//    DispatchQueue.main.async{
+//      let vc = self.view?.window?.rootViewController
+//      vc?.present(myVC, animated: true, completion: nil)
+//
+//    }
+    
+    DispatchQueue.main.async {
+      let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
+      appDelegate.window?.rootViewController = myVC
+    }
+    
+    
+//    DispatchQueue.main.async {
+//      self.present(myVC, animated: false, completion: nil)
+//    }
+        //self.navigationController?.pushViewController(myVC, animated: true)
+    
+    
+    
+//    let alert = UIAlertController(title: place.placeName , message: place.infoText, preferredStyle: UIAlertControllerStyle.alert)
+//    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+//    
+//    arViewController.present(alert, animated: true, completion: nil)
   }
 }
 
@@ -154,5 +189,22 @@ extension ViewController: AnnotationViewDelegate {
       }
       
     }
+  }
+}
+
+extension UIApplication {
+  class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    if let nav = base as? UINavigationController {
+      return topViewController(base: nav.visibleViewController)
+    }
+    if let tab = base as? UITabBarController {
+      if let selected = tab.selectedViewController {
+        return topViewController(base: selected)
+      }
+    }
+    if let presented = base?.presentedViewController {
+      return topViewController(base: presented)
+    }
+    return base
   }
 }

@@ -31,6 +31,7 @@
 		8FFCD7D61DC608FE009E3855 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */; };
 		B45A83331FAD13EC001A207E /* arugula_logo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B45A83321FAD13EB001A207E /* arugula_logo4.png */; };
 		B46531D21FAFC20A00355867 /* arugula_logo_annotations.png in Resources */ = {isa = PBXBuildFile; fileRef = B46531D11FAFC20900355867 /* arugula_logo_annotations.png */; };
+		B4A77B391FCDEB5500DCB652 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A77B381FCDEB5500DCB652 /* RestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 		B45A83321FAD13EB001A207E /* arugula_logo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arugula_logo4.png; sourceTree = "<group>"; };
 		B46531D11FAFC20900355867 /* arugula_logo_annotations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arugula_logo_annotations.png; sourceTree = "<group>"; };
+		B4A77B381FCDEB5500DCB652 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B45A83321FAD13EB001A207E /* arugula_logo4.png */,
 				8FFCD7A01DC4A204009E3855 /* AppDelegate.swift */,
 				8FFCD7A21DC4A204009E3855 /* ViewController.swift */,
+				B4A77B381FCDEB5500DCB652 /* RestaurantViewController.swift */,
 				8FFCD7D11DC4A539009E3855 /* Place.swift */,
 				8F7404861DCF8834009A6F0B /* AnnotationView.swift */,
 				8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */,
@@ -257,6 +260,7 @@
 				8FFCD7D21DC4A539009E3855 /* Place.swift in Sources */,
 				8FFCD7C21DC4A39A009E3855 /* ARConfiguration.swift in Sources */,
 				8FFCD7A11DC4A204009E3855 /* AppDelegate.swift in Sources */,
+				B4A77B391FCDEB5500DCB652 /* RestaurantViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

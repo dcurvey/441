@@ -18,6 +18,7 @@ provides-dynamic-lookup:
 - "titleLabel"
 - "touchesEnded"
 depends-top-level:
+- !private "*"
 - !private "+"
 - !private "/"
 - "ARAnnotationView"
@@ -40,6 +41,7 @@ depends-top-level:
 - !private "UnicodeScalarType"
 - !private "~="
 depends-member:
+- !private ["9_AR_ugula12ARAnnotationC", "annotationSize"]
 - !private ["9_AR_ugula12ARAnnotationC", "distanceFromUser"]
 - !private ["9_AR_ugula12ARAnnotationC", "placeName"]
 - !private ["9_AR_ugula12ARAnnotationC", "placePrice"]
@@ -138,6 +140,7 @@ depends-member:
 - !private ["s7CVarArgP", "UILabel"]
 - !private ["s7CVarArgP", "addSubview"]
 - !private ["s7CVarArgP", "annotation"]
+- !private ["s7CVarArgP", "annotationSize"]
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "didMoveToSuperview"]
@@ -173,6 +176,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UILabel"]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "annotation"]
+- !private ["s28CustomDebugStringConvertibleP", "annotationSize"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "didMoveToSuperview"]
@@ -217,6 +221,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
 - !private ["s23CustomStringConvertibleP", "annotation"]
+- !private ["s23CustomStringConvertibleP", "annotationSize"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "didMoveToSuperview"]
@@ -259,6 +264,7 @@ depends-member:
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "addSubview"]
 - !private ["s9EquatableP", "annotation"]
+- !private ["s9EquatableP", "annotationSize"]
 - !private ["s9EquatableP", "backgroundColor"]
 - !private ["s9EquatableP", "delegate"]
 - !private ["s9EquatableP", "didMoveToSuperview"]
@@ -299,6 +305,7 @@ depends-member:
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "addSubview"]
 - !private ["s8HashableP", "annotation"]
+- !private ["s8HashableP", "annotationSize"]
 - !private ["s8HashableP", "backgroundColor"]
 - !private ["s8HashableP", "delegate"]
 - !private ["s8HashableP", "didMoveToSuperview"]
@@ -379,6 +386,7 @@ depends-member:
 - ["So8NSObjectC", "UITouch"]
 - !private ["So8NSObjectC", "addSubview"]
 - !private ["So8NSObjectC", "annotation"]
+- !private ["So8NSObjectC", "annotationSize"]
 - !private ["So8NSObjectC", "backgroundColor"]
 - ["So8NSObjectC", "delegate"]
 - ["So8NSObjectC", "didMoveToSuperview"]
@@ -412,6 +420,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UILabel"]
 - !private ["So16NSObjectProtocolP", "addSubview"]
 - !private ["So16NSObjectProtocolP", "annotation"]
+- !private ["So16NSObjectProtocolP", "annotationSize"]
 - !private ["So16NSObjectProtocolP", "backgroundColor"]
 - !private ["So16NSObjectProtocolP", "delegate"]
 - !private ["So16NSObjectProtocolP", "didMoveToSuperview"]
@@ -440,7 +449,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "white"]
 - !private ["So8NSStringC", "init"]
-- !private ["9_AR_ugula5PlaceC", "distanceFromUser"]
 - !private ["9_AR_ugula5PlaceC", "placeName"]
 - !private ["9_AR_ugula5PlaceC", "placePrice"]
 - !private ["9_AR_ugula5PlaceC", "placeRate"]
@@ -847,6 +855,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UILabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "annotation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "annotationSize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didMoveToSuperview"]

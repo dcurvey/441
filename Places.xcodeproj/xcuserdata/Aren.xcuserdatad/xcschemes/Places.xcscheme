@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8FFCD79C1DC4A204009E3855"
-               BuildableName = "Places.app"
+               BuildableName = "(AR)ugula.app"
                BlueprintName = "Places"
                ReferencedContainer = "container:Places.xcodeproj">
             </BuildableReference>
@@ -34,7 +34,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8FFCD79C1DC4A204009E3855"
-            BuildableName = "Places.app"
+            BuildableName = "(AR)ugula.app"
             BlueprintName = "Places"
             ReferencedContainer = "container:Places.xcodeproj">
          </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8FFCD79C1DC4A204009E3855"
-            BuildableName = "Places.app"
+            BuildableName = "(AR)ugula.app"
             BlueprintName = "Places"
             ReferencedContainer = "container:Places.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8FFCD79C1DC4A204009E3855"
-            BuildableName = "Places.app"
+            BuildableName = "(AR)ugula.app"
             BlueprintName = "Places"
             ReferencedContainer = "container:Places.xcodeproj">
          </BuildableReference>

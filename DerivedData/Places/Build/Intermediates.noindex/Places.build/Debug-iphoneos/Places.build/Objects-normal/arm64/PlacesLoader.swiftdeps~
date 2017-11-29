@@ -3,11 +3,11 @@ provides-top-level:
 - "restaurantInformation"
 - "PlacesLoader"
 provides-nominal:
-- "6Places21restaurantInformationV"
-- "6Places0A6LoaderV"
+- "9_AR_ugula21restaurantInformationV"
+- "9_AR_ugula12PlacesLoaderV"
 provides-member:
-- ["6Places21restaurantInformationV", ""]
-- ["6Places0A6LoaderV", ""]
+- ["9_AR_ugula21restaurantInformationV", ""]
+- ["9_AR_ugula12PlacesLoaderV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "+"
@@ -33,13 +33,12 @@ depends-top-level:
 - !private "print"
 - "restaurantInformation"
 depends-member:
-- !private ["6Places12ARAnnotationC", "reference"]
+- !private ["9_AR_ugula12ARAnnotationC", "reference"]
 - ["s23BidirectionalCollectionP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So10CLLocationC", "coordinate"]
 - !private ["SC22CLLocationCoordinate2DV", "latitude"]
 - !private ["SC22CLLocationCoordinate2DV", "longitude"]
-- !private ["s7CVarArgP", "allKeys"]
 - !private ["s7CVarArgP", "coordinate"]
 - !private ["s7CVarArgP", "dataTask"]
 - !private ["s7CVarArgP", "default"]
@@ -52,7 +51,6 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "allKeys"]
 - !private ["s28CustomDebugStringConvertibleP", "coordinate"]
 - !private ["s28CustomDebugStringConvertibleP", "dataTask"]
 - !private ["s28CustomDebugStringConvertibleP", "default"]
@@ -66,12 +64,10 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- !private ["s17CustomReflectableP", "allKeys"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "object"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s23CustomStringConvertibleP", "allKeys"]
 - !private ["s23CustomStringConvertibleP", "coordinate"]
 - !private ["s23CustomStringConvertibleP", "dataTask"]
 - !private ["s23CustomStringConvertibleP", "default"]
@@ -87,7 +83,6 @@ depends-member:
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "allKeys"]
 - !private ["s9EquatableP", "allowFragments"]
 - !private ["s9EquatableP", "coordinate"]
 - !private ["s9EquatableP", "dataTask"]
@@ -101,7 +96,6 @@ depends-member:
 - !private ["s9EquatableP", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "allowFragments"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "allKeys"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "object"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -109,7 +103,6 @@ depends-member:
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["So15HTTPURLResponseC", "statusCode"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "allKeys"]
 - !private ["s8HashableP", "coordinate"]
 - !private ["s8HashableP", "dataTask"]
 - !private ["s8HashableP", "default"]
@@ -124,13 +117,11 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
-- !private ["So8NSCodingP", "allKeys"]
 - !private ["So8NSCodingP", "coordinate"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "object"]
 - !private ["So8NSCodingP", "statusCode"]
 - !private ["So8NSCodingP", "subscript"]
-- !private ["So9NSCopyingP", "allKeys"]
 - !private ["So9NSCopyingP", "coordinate"]
 - !private ["So9NSCopyingP", "default"]
 - ["So9NSCopyingP", "init"]
@@ -138,19 +129,15 @@ depends-member:
 - !private ["So9NSCopyingP", "resume"]
 - !private ["So9NSCopyingP", "statusCode"]
 - !private ["So9NSCopyingP", "subscript"]
-- !private ["So12NSDictionaryC", "allKeys"]
 - !private ["So12NSDictionaryC", "object"]
 - !private ["So12NSDictionaryC", "subscript"]
-- !private ["So17NSFastEnumerationP", "allKeys"]
 - !private ["So17NSFastEnumerationP", "object"]
 - !private ["So17NSFastEnumerationP", "subscript"]
 - ["So21NSItemProviderReadingP", "init"]
 - ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "allKeys"]
 - ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "object"]
 - !private ["So16NSMutableCopyingP", "subscript"]
-- !private ["So8NSObjectC", "allKeys"]
 - !private ["So8NSObjectC", "coordinate"]
 - !private ["So8NSObjectC", "dataTask"]
 - !private ["So8NSObjectC", "default"]
@@ -161,7 +148,6 @@ depends-member:
 - !private ["So8NSObjectC", "resume"]
 - !private ["So8NSObjectC", "statusCode"]
 - !private ["So8NSObjectC", "subscript"]
-- !private ["So16NSObjectProtocolP", "allKeys"]
 - !private ["So16NSObjectProtocolP", "coordinate"]
 - !private ["So16NSObjectProtocolP", "dataTask"]
 - !private ["So16NSObjectProtocolP", "default"]
@@ -172,7 +158,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "resume"]
 - !private ["So16NSObjectProtocolP", "statusCode"]
 - !private ["So16NSObjectProtocolP", "subscript"]
-- !private ["So14NSSecureCodingP", "allKeys"]
 - !private ["So14NSSecureCodingP", "coordinate"]
 - ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "object"]
@@ -180,34 +165,33 @@ depends-member:
 - !private ["So14NSSecureCodingP", "subscript"]
 - ["So8NSStringC", "init"]
 - !private ["s9OptionSetP", "allowFragments"]
-- !private ["6Places5PlaceC", "reference"]
-- !private ["6Places0A6LoaderV", "Bool"]
-- ["6Places0A6LoaderV", "CLLocation"]
-- !private ["6Places0A6LoaderV", "Double"]
-- !private ["6Places0A6LoaderV", "HTTPURLResponse"]
-- ["6Places0A6LoaderV", "Int"]
-- !private ["6Places0A6LoaderV", "JSONSerialization"]
-- ["6Places0A6LoaderV", "NSDictionary"]
-- ["6Places0A6LoaderV", "NSError"]
-- ["6Places0A6LoaderV", "Place"]
-- !private ["6Places0A6LoaderV", "String"]
-- !private ["6Places0A6LoaderV", "URL"]
-- !private ["6Places0A6LoaderV", "URLSession"]
-- !private ["6Places0A6LoaderV", "URLSessionConfiguration"]
-- ["6Places0A6LoaderV", "Void"]
-- ["6Places0A6LoaderV", "apiKey"]
-- ["6Places0A6LoaderV", "apiURL"]
-- ["6Places0A6LoaderV", "init"]
-- ["6Places0A6LoaderV", "loadDetailInformation"]
-- ["6Places0A6LoaderV", "loadPOIS"]
-- !private ["6Places0A6LoaderV", "print"]
-- !private ["6Places0A6LoaderV", "restaurantInformation"]
+- !private ["9_AR_ugula5PlaceC", "reference"]
+- !private ["9_AR_ugula12PlacesLoaderV", "Bool"]
+- ["9_AR_ugula12PlacesLoaderV", "CLLocation"]
+- !private ["9_AR_ugula12PlacesLoaderV", "Double"]
+- !private ["9_AR_ugula12PlacesLoaderV", "HTTPURLResponse"]
+- ["9_AR_ugula12PlacesLoaderV", "Int"]
+- !private ["9_AR_ugula12PlacesLoaderV", "JSONSerialization"]
+- ["9_AR_ugula12PlacesLoaderV", "NSDictionary"]
+- ["9_AR_ugula12PlacesLoaderV", "NSError"]
+- ["9_AR_ugula12PlacesLoaderV", "Place"]
+- !private ["9_AR_ugula12PlacesLoaderV", "String"]
+- !private ["9_AR_ugula12PlacesLoaderV", "URL"]
+- !private ["9_AR_ugula12PlacesLoaderV", "URLSession"]
+- !private ["9_AR_ugula12PlacesLoaderV", "URLSessionConfiguration"]
+- ["9_AR_ugula12PlacesLoaderV", "Void"]
+- ["9_AR_ugula12PlacesLoaderV", "apiKey"]
+- ["9_AR_ugula12PlacesLoaderV", "apiURL"]
+- ["9_AR_ugula12PlacesLoaderV", "init"]
+- ["9_AR_ugula12PlacesLoaderV", "loadDetailInformation"]
+- ["9_AR_ugula12PlacesLoaderV", "loadPOIS"]
+- !private ["9_AR_ugula12PlacesLoaderV", "print"]
+- !private ["9_AR_ugula12PlacesLoaderV", "restaurantInformation"]
 - !private ["So17ProgressReportingP", "resume"]
 - ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s16RawRepresentableP", "allowFragments"]
 - !private ["So17JSONSerializationC14ReadingOptionsV", "allowFragments"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
-- !private ["s8SequenceP", "allKeys"]
 - ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "object"]
 - !private ["s8SequenceP", "subscript"]
@@ -234,7 +218,6 @@ depends-member:
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - ["s10_IndexableP", "init"]
 - ["s14_IndexableBaseP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "allKeys"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "coordinate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
@@ -251,18 +234,18 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "longitude"]
 - ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
-- ["6Places21restaurantInformationV", "Bool"]
-- ["6Places21restaurantInformationV", "Double"]
-- ["6Places21restaurantInformationV", "Int"]
-- ["6Places21restaurantInformationV", "String"]
-- ["6Places21restaurantInformationV", "address"]
-- ["6Places21restaurantInformationV", "init"]
-- ["6Places21restaurantInformationV", "name"]
-- ["6Places21restaurantInformationV", "open"]
-- ["6Places21restaurantInformationV", "price"]
-- ["6Places21restaurantInformationV", "rating"]
+- ["9_AR_ugula21restaurantInformationV", "Bool"]
+- ["9_AR_ugula21restaurantInformationV", "Double"]
+- ["9_AR_ugula21restaurantInformationV", "Int"]
+- ["9_AR_ugula21restaurantInformationV", "String"]
+- ["9_AR_ugula21restaurantInformationV", "address"]
+- ["9_AR_ugula21restaurantInformationV", "init"]
+- ["9_AR_ugula21restaurantInformationV", "name"]
+- ["9_AR_ugula21restaurantInformationV", "open"]
+- ["9_AR_ugula21restaurantInformationV", "price"]
+- ["9_AR_ugula21restaurantInformationV", "rating"]
 depends-nominal:
-- !private "6Places12ARAnnotationC"
+- !private "9_AR_ugula12ARAnnotationC"
 - "s23BidirectionalCollectionP"
 - !private "Sb"
 - !private "So10CLLocationC"
@@ -300,8 +283,8 @@ depends-nominal:
 - "So14NSSecureCodingP"
 - "So8NSStringC"
 - !private "s9OptionSetP"
-- !private "6Places5PlaceC"
-- "6Places0A6LoaderV"
+- !private "9_AR_ugula5PlaceC"
+- "9_AR_ugula12PlacesLoaderV"
 - !private "So17ProgressReportingP"
 - "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
@@ -334,7 +317,7 @@ depends-nominal:
 - "s21_ObjectiveCBridgeableP"
 - "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
-- "6Places21restaurantInformationV"
+- "9_AR_ugula21restaurantInformationV"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"

@@ -2,9 +2,9 @@
 provides-top-level:
 - "DebugMapViewController"
 provides-nominal:
-- "6Places22DebugMapViewControllerC"
+- "9_AR_ugula22DebugMapViewControllerC"
 provides-member:
-- ["6Places22DebugMapViewControllerC", ""]
+- ["9_AR_ugula22DebugMapViewControllerC", ""]
 provides-dynamic-lookup:
 - "addAnnotations"
 - "closeButtonTap"
@@ -49,11 +49,11 @@ depends-top-level:
 - "UILongPressGestureRecognizer"
 - "UIViewController"
 depends-member:
-- !private ["6Places12ARAnnotationC", "azimuth"]
-- !private ["6Places12ARAnnotationC", "distanceFromUser"]
-- !private ["6Places12ARAnnotationC", "location"]
-- !private ["6Places12ARAnnotationC", "title"]
-- !private ["6Places12ARAnnotationC", "verticalLevel"]
+- !private ["9_AR_ugula12ARAnnotationC", "azimuth"]
+- !private ["9_AR_ugula12ARAnnotationC", "distanceFromUser"]
+- !private ["9_AR_ugula12ARAnnotationC", "location"]
+- !private ["9_AR_ugula12ARAnnotationC", "title"]
+- !private ["9_AR_ugula12ARAnnotationC", "verticalLevel"]
 - !private ["Sa", "append"]
 - !private ["s23BidirectionalCollectionP", "append"]
 - !private ["s23BidirectionalCollectionP", "init"]
@@ -280,52 +280,52 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewDidDisappear"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", ""]
-- ["6Places22DebugMapViewControllerC", "ARAnnotation"]
-- !private ["6Places22DebugMapViewControllerC", "AnyHashable"]
-- ["6Places22DebugMapViewControllerC", "AnyObject"]
-- ["6Places22DebugMapViewControllerC", "Bool"]
-- ["6Places22DebugMapViewControllerC", "Bundle"]
-- ["6Places22DebugMapViewControllerC", "CLHeading"]
-- !private ["6Places22DebugMapViewControllerC", "CLLocation"]
-- !private ["6Places22DebugMapViewControllerC", "CLLocationCoordinate2DIsValid"]
-- !private ["6Places22DebugMapViewControllerC", "CLLocationDirection"]
-- ["6Places22DebugMapViewControllerC", "CLLocationManager"]
-- ["6Places22DebugMapViewControllerC", "Double"]
-- !private ["6Places22DebugMapViewControllerC", "MKMapCamera"]
-- ["6Places22DebugMapViewControllerC", "MKMapView"]
-- !private ["6Places22DebugMapViewControllerC", "MKPointAnnotation"]
-- ["6Places22DebugMapViewControllerC", "NSCoder"]
-- !private ["6Places22DebugMapViewControllerC", "Notification"]
-- !private ["6Places22DebugMapViewControllerC", "NotificationCenter"]
-- ["6Places22DebugMapViewControllerC", "String"]
-- !private ["6Places22DebugMapViewControllerC", "UIGestureRecognizerState"]
-- ["6Places22DebugMapViewControllerC", "UILongPressGestureRecognizer"]
-- ["6Places22DebugMapViewControllerC", "addAnnotations"]
-- !private ["6Places22DebugMapViewControllerC", "addAnnotationsOnMap"]
-- !private ["6Places22DebugMapViewControllerC", "annotations"]
-- ["6Places22DebugMapViewControllerC", "closeButtonTap"]
-- ["6Places22DebugMapViewControllerC", "deinit"]
-- !private ["6Places22DebugMapViewControllerC", "heading"]
-- ["6Places22DebugMapViewControllerC", "init"]
-- !private ["6Places22DebugMapViewControllerC", "interactionInProgress"]
-- !private ["6Places22DebugMapViewControllerC", "isViewLoaded"]
-- ["6Places22DebugMapViewControllerC", "locationManager"]
-- ["6Places22DebugMapViewControllerC", "locationManagerDidPauseLocationUpdates"]
-- ["6Places22DebugMapViewControllerC", "locationManagerDidResumeLocationUpdates"]
-- ["6Places22DebugMapViewControllerC", "locationManagerShouldDisplayHeadingCalibration"]
-- ["6Places22DebugMapViewControllerC", "longTap"]
-- ["6Places22DebugMapViewControllerC", "mapView"]
-- ["6Places22DebugMapViewControllerC", "mapViewDidFailLoadingMap"]
-- ["6Places22DebugMapViewControllerC", "mapViewDidFinishLoadingMap"]
-- ["6Places22DebugMapViewControllerC", "mapViewDidFinishRenderingMap"]
-- ["6Places22DebugMapViewControllerC", "mapViewDidStopLocatingUser"]
-- ["6Places22DebugMapViewControllerC", "mapViewWillStartLoadingMap"]
-- ["6Places22DebugMapViewControllerC", "mapViewWillStartLocatingUser"]
-- ["6Places22DebugMapViewControllerC", "mapViewWillStartRenderingMap"]
-- !private ["6Places22DebugMapViewControllerC", "presentingViewController"]
-- ["6Places22DebugMapViewControllerC", "viewDidAppear"]
-- ["6Places22DebugMapViewControllerC", "viewDidDisappear"]
-- ["6Places22DebugMapViewControllerC", "viewDidLoad"]
+- ["9_AR_ugula22DebugMapViewControllerC", "ARAnnotation"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "AnyHashable"]
+- ["9_AR_ugula22DebugMapViewControllerC", "AnyObject"]
+- ["9_AR_ugula22DebugMapViewControllerC", "Bool"]
+- ["9_AR_ugula22DebugMapViewControllerC", "Bundle"]
+- ["9_AR_ugula22DebugMapViewControllerC", "CLHeading"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "CLLocation"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "CLLocationCoordinate2DIsValid"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "CLLocationDirection"]
+- ["9_AR_ugula22DebugMapViewControllerC", "CLLocationManager"]
+- ["9_AR_ugula22DebugMapViewControllerC", "Double"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "MKMapCamera"]
+- ["9_AR_ugula22DebugMapViewControllerC", "MKMapView"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "MKPointAnnotation"]
+- ["9_AR_ugula22DebugMapViewControllerC", "NSCoder"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "Notification"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "NotificationCenter"]
+- ["9_AR_ugula22DebugMapViewControllerC", "String"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "UIGestureRecognizerState"]
+- ["9_AR_ugula22DebugMapViewControllerC", "UILongPressGestureRecognizer"]
+- ["9_AR_ugula22DebugMapViewControllerC", "addAnnotations"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "addAnnotationsOnMap"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "annotations"]
+- ["9_AR_ugula22DebugMapViewControllerC", "closeButtonTap"]
+- ["9_AR_ugula22DebugMapViewControllerC", "deinit"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "heading"]
+- ["9_AR_ugula22DebugMapViewControllerC", "init"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "interactionInProgress"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "isViewLoaded"]
+- ["9_AR_ugula22DebugMapViewControllerC", "locationManager"]
+- ["9_AR_ugula22DebugMapViewControllerC", "locationManagerDidPauseLocationUpdates"]
+- ["9_AR_ugula22DebugMapViewControllerC", "locationManagerDidResumeLocationUpdates"]
+- ["9_AR_ugula22DebugMapViewControllerC", "locationManagerShouldDisplayHeadingCalibration"]
+- ["9_AR_ugula22DebugMapViewControllerC", "longTap"]
+- ["9_AR_ugula22DebugMapViewControllerC", "mapView"]
+- ["9_AR_ugula22DebugMapViewControllerC", "mapViewDidFailLoadingMap"]
+- ["9_AR_ugula22DebugMapViewControllerC", "mapViewDidFinishLoadingMap"]
+- ["9_AR_ugula22DebugMapViewControllerC", "mapViewDidFinishRenderingMap"]
+- ["9_AR_ugula22DebugMapViewControllerC", "mapViewDidStopLocatingUser"]
+- ["9_AR_ugula22DebugMapViewControllerC", "mapViewWillStartLoadingMap"]
+- ["9_AR_ugula22DebugMapViewControllerC", "mapViewWillStartLocatingUser"]
+- ["9_AR_ugula22DebugMapViewControllerC", "mapViewWillStartRenderingMap"]
+- !private ["9_AR_ugula22DebugMapViewControllerC", "presentingViewController"]
+- ["9_AR_ugula22DebugMapViewControllerC", "viewDidAppear"]
+- ["9_AR_ugula22DebugMapViewControllerC", "viewDidDisappear"]
+- ["9_AR_ugula22DebugMapViewControllerC", "viewDidLoad"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "init"]
@@ -1240,7 +1240,7 @@ depends-member:
 - !private ["s20_SwiftNewtypeWrapperP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
-- !private "6Places12ARAnnotationC"
+- !private "9_AR_ugula12ARAnnotationC"
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
 - !private "s19BinaryFloatingPointP"
@@ -1258,7 +1258,7 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "6Places22DebugMapViewControllerC"
+- "9_AR_ugula22DebugMapViewControllerC"
 - !private "s9DecodableP"
 - !private "Sd"
 - !private "s9EncodableP"

@@ -2,9 +2,9 @@
 provides-top-level:
 - "AppDelegate"
 provides-nominal:
-- "6Places11AppDelegateC"
+- "9_AR_ugula11AppDelegateC"
 provides-member:
-- ["6Places11AppDelegateC", ""]
+- ["9_AR_ugula11AppDelegateC", ""]
 provides-dynamic-lookup:
 - "application"
 - "applicationDidBecomeActive"
@@ -23,25 +23,25 @@ depends-top-level:
 - "UIResponder"
 - "UIWindow"
 depends-member:
-- ["6Places11AppDelegateC", "Bool"]
-- ["6Places11AppDelegateC", "UIApplication"]
-- ["6Places11AppDelegateC", "UIApplicationLaunchOptionsKey"]
-- ["6Places11AppDelegateC", "UIWindow"]
-- ["6Places11AppDelegateC", "application"]
-- ["6Places11AppDelegateC", "applicationDidBecomeActive"]
-- ["6Places11AppDelegateC", "applicationDidEnterBackground"]
-- ["6Places11AppDelegateC", "applicationDidFinishLaunching"]
-- ["6Places11AppDelegateC", "applicationDidReceiveMemoryWarning"]
-- ["6Places11AppDelegateC", "applicationProtectedDataDidBecomeAvailable"]
-- ["6Places11AppDelegateC", "applicationProtectedDataWillBecomeUnavailable"]
-- ["6Places11AppDelegateC", "applicationShouldRequestHealthAuthorization"]
-- ["6Places11AppDelegateC", "applicationSignificantTimeChange"]
-- ["6Places11AppDelegateC", "applicationWillEnterForeground"]
-- ["6Places11AppDelegateC", "applicationWillResignActive"]
-- ["6Places11AppDelegateC", "applicationWillTerminate"]
-- ["6Places11AppDelegateC", "deinit"]
-- ["6Places11AppDelegateC", "init"]
-- ["6Places11AppDelegateC", "window"]
+- ["9_AR_ugula11AppDelegateC", "Bool"]
+- ["9_AR_ugula11AppDelegateC", "UIApplication"]
+- ["9_AR_ugula11AppDelegateC", "UIApplicationLaunchOptionsKey"]
+- ["9_AR_ugula11AppDelegateC", "UIWindow"]
+- ["9_AR_ugula11AppDelegateC", "application"]
+- ["9_AR_ugula11AppDelegateC", "applicationDidBecomeActive"]
+- ["9_AR_ugula11AppDelegateC", "applicationDidEnterBackground"]
+- ["9_AR_ugula11AppDelegateC", "applicationDidFinishLaunching"]
+- ["9_AR_ugula11AppDelegateC", "applicationDidReceiveMemoryWarning"]
+- ["9_AR_ugula11AppDelegateC", "applicationProtectedDataDidBecomeAvailable"]
+- ["9_AR_ugula11AppDelegateC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["9_AR_ugula11AppDelegateC", "applicationShouldRequestHealthAuthorization"]
+- ["9_AR_ugula11AppDelegateC", "applicationSignificantTimeChange"]
+- ["9_AR_ugula11AppDelegateC", "applicationWillEnterForeground"]
+- ["9_AR_ugula11AppDelegateC", "applicationWillResignActive"]
+- ["9_AR_ugula11AppDelegateC", "applicationWillTerminate"]
+- ["9_AR_ugula11AppDelegateC", "deinit"]
+- ["9_AR_ugula11AppDelegateC", "init"]
+- ["9_AR_ugula11AppDelegateC", "window"]
 - ["s7CVarArgP", "application"]
 - ["s7CVarArgP", "applicationDidBecomeActive"]
 - ["s7CVarArgP", "applicationDidEnterBackground"]
@@ -229,7 +229,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 depends-nominal:
-- "6Places11AppDelegateC"
+- "9_AR_ugula11AppDelegateC"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"

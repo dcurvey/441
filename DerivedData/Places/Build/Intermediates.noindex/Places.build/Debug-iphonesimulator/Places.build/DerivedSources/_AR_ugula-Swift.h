@@ -201,6 +201,7 @@ SWIFT_CLASS("_TtC9_AR_ugula12ARAnnotation")
 @property (nonatomic, strong) CLLocation * _Nullable location;
 /// View for annotation. It is set inside ARViewController after fetching view from dataSource.
 @property (nonatomic, strong) ARAnnotationView * _Nullable annotationView;
+@property (nonatomic) double annotationSize;
 @property (nonatomic) double distanceFromUser;
 @property (nonatomic) double azimuth;
 @property (nonatomic) NSInteger verticalLevel;
@@ -473,6 +474,26 @@ SWIFT_CLASS("_TtC9_AR_ugula15PlaceAnnotation")
 @end
 
 
+SWIFT_CLASS("_TtC9_AR_ugula24RestaurantViewController")
+@interface RestaurantViewController : UIViewController
+@property (nonatomic) NSInteger PriceInt;
+@property (nonatomic, copy) NSString * _Nonnull NameString;
+@property (nonatomic, copy) NSString * _Nonnull NumberString;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Price;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Name;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Number;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIApplication (SWIFT_EXTENSION(_AR_ugula))
++ (UIViewController * _Nullable)topViewControllerWithBase:(UIViewController * _Nullable)base SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 SWIFT_CLASS("_TtC9_AR_ugula14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
@@ -487,13 +508,13 @@ SWIFT_CLASS("_TtC9_AR_ugula14ViewController")
 @end
 
 
-@interface ViewController (SWIFT_EXTENSION(_AR_ugula)) <ARDataSource>
-- (ARAnnotationView * _Nonnull)ar:(ARViewController * _Nonnull)arViewController viewForAnnotation:(ARAnnotation * _Nonnull)viewForAnnotation SWIFT_WARN_UNUSED_RESULT;
+@interface ViewController (SWIFT_EXTENSION(_AR_ugula))
+- (void)didTouchWithAnnotationView:(AnnotationView * _Nonnull)annotationView;
 @end
 
 
-@interface ViewController (SWIFT_EXTENSION(_AR_ugula))
-- (void)didTouchWithAnnotationView:(AnnotationView * _Nonnull)annotationView;
+@interface ViewController (SWIFT_EXTENSION(_AR_ugula)) <ARDataSource>
+- (ARAnnotationView * _Nonnull)ar:(ARViewController * _Nonnull)arViewController viewForAnnotation:(ARAnnotation * _Nonnull)viewForAnnotation SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
