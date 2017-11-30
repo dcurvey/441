@@ -76,7 +76,8 @@ class ViewController: UIViewController {
     
     myVC.NameString = place.placeName
     myVC.PriceInt = place.placePrice
-    //myVC.RatingInt = place.placeRate
+    myVC.RatingDouble = place.placeRate
+    myVC.Address = place.address
     
     if let x = place.phoneNumber{
        myVC.NumberString = x

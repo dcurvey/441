@@ -476,16 +476,42 @@ SWIFT_CLASS("_TtC9_AR_ugula15PlaceAnnotation")
 
 SWIFT_CLASS("_TtC9_AR_ugula24RestaurantViewController")
 @interface RestaurantViewController : UIViewController
+@property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
+@property (nonatomic, strong) ARViewController * _Null_unspecified arViewController;
+@property (nonatomic) BOOL startedLoadingPOIs;
 @property (nonatomic) NSInteger PriceInt;
 @property (nonatomic, copy) NSString * _Nonnull NameString;
 @property (nonatomic, copy) NSString * _Nonnull NumberString;
+@property (nonatomic) double RatingDouble;
+@property (nonatomic, copy) NSString * _Nonnull Address;
+- (IBAction)LaunchAr:(id _Nonnull)sender;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified AddressLabel2;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Price;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Name;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Number;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Rating;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified AddressLabel;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)showInfoViewForPlace:(Place * _Nonnull)place;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface RestaurantViewController (SWIFT_EXTENSION(_AR_ugula)) <ARDataSource>
+- (ARAnnotationView * _Nonnull)ar:(ARViewController * _Nonnull)arViewController viewForAnnotation:(ARAnnotation * _Nonnull)viewForAnnotation SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface RestaurantViewController (SWIFT_EXTENSION(_AR_ugula))
+- (void)didTouchWithAnnotationView:(AnnotationView * _Nonnull)annotationView;
+@end
+
+
+@interface RestaurantViewController (SWIFT_EXTENSION(_AR_ugula)) <CLLocationManagerDelegate>
+- (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager * _Nonnull)manager SWIFT_WARN_UNUSED_RESULT;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 @end
 
 
