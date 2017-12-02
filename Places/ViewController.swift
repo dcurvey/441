@@ -80,6 +80,7 @@ class ViewController: UIViewController {
     myVC.Address = place.address
     myVC.photoRef = place.photoRef!
     myVC.photoWid = place.photoWidth!
+    myVC.openBool = place.isOpen!
     
     if let x = place.phoneNumber{
        myVC.NumberString = x

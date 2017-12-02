@@ -26,6 +26,7 @@ class RestaurantViewController: UIViewController {
   var Address = ""
   var photoRef = ""
   var photoWid = Int()
+  var openBool = false
   
   
   
@@ -47,6 +48,7 @@ class RestaurantViewController: UIViewController {
   }
   
     //@IBOutlet weak var Rating: UILabel!
+  @IBOutlet weak var Open: UILabel!
   @IBOutlet weak var AddressLabel2: UILabel!
   @IBOutlet weak var Price: UILabel!
   @IBOutlet weak var Name: UILabel!
@@ -54,6 +56,7 @@ class RestaurantViewController: UIViewController {
   @IBOutlet weak var Rating: UILabel!
   @IBOutlet weak var AddressLabel: UILabel!
   @IBOutlet weak var Photo: UIImageView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
         //Rating.text = String(RatingInt)
@@ -88,6 +91,36 @@ class RestaurantViewController: UIViewController {
         Name.text = NameString
         Number.text = NumberString
         Rating.text = "Rating: " + String(RatingDouble)
+    if openBool {
+      Open.text = "Currently Open"
+    }
+    else{
+      Open.text = "Currently Closed"
+    }
+    
+    
+    let uri = "https://maps.googleapis.com/maps/api/place/photo?" + "maxwidth=\(photoWid)&photoreference=\(photoRef)&key=AIzaSyDgt9HpXXLMLEUe5sOWPIXpEHmqgHCEyaw"
+    let config = URLSessionConfiguration.default
+    let session = URLSession(configuration: config)
+    if let url = NSURL(string: uri){
+      let task = session.dataTask(with: url as URL, completionHandler: {data, response, error in
+          
+          if let err = error {
+            print("Error: \(err)")
+            return
+          }
+          
+        if let http = response as? HTTPURLResponse {
+            if http.statusCode == 200 {
+              let downloadedImage = UIImage(data: data!)
+              DispatchQueue.main.async {
+                self.Photo.image = downloadedImage
+              }
+            }
+          }
+        })
+        task.resume()
+      }
     
     
         var x = Address.components(separatedBy: ",")

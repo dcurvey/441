@@ -59,7 +59,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etT-ux-Mgw">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="8tg-hm-ERq"/>
                                 </connections>
@@ -159,8 +159,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o85-4v-dk7">
+                                <rect key="frame" x="48" y="594" width="254" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View In Map View"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="txf-cE-5Em"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Currently Open" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSI-ng-vKs">
+                                <rect key="frame" x="75" y="539" width="201" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iTe-xV-mkx">
-                                <rect key="frame" x="65" y="80" width="247" height="135"/>
+                                <rect key="frame" x="0.0" y="62" width="375" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -171,6 +186,8 @@
                         <outlet property="AddressLabel2" destination="HXi-D7-XAW" id="wgQ-9k-tys"/>
                         <outlet property="Name" destination="9zS-JC-egd" id="OOS-Q5-Q9U"/>
                         <outlet property="Number" destination="62Z-Ug-lSt" id="PTa-7a-XHj"/>
+                        <outlet property="Open" destination="GSI-ng-vKs" id="IWI-kS-gt1"/>
+                        <outlet property="Photo" destination="iTe-xV-mkx" id="Jsv-jg-t16"/>
                         <outlet property="Price" destination="HMs-Pu-Ygx" id="C1X-TA-khQ"/>
                         <outlet property="Rating" destination="ftz-q7-Af2" id="ceg-pd-Q6V"/>
                     </connections>
@@ -202,4 +219,7 @@
         <image name="arugula_background" width="1242" height="2208"/>
         <image name="arugula_logo_3" width="320" height="320"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="txf-cE-5Em"/>
+    </inferredMetricsTieBreakers>
 </document>
