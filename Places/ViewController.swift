@@ -78,6 +78,8 @@ class ViewController: UIViewController {
     myVC.PriceInt = place.placePrice
     myVC.RatingDouble = place.placeRate
     myVC.Address = place.address
+    myVC.photoRef = place.photoRef!
+    myVC.photoWid = place.photoWidth!
     
     if let x = place.phoneNumber{
        myVC.NumberString = x
@@ -144,10 +146,23 @@ extension ViewController: CLLocationManagerDelegate {
                   price =
                     placeDict.object(forKey: "price_level") as! Int
                 }
+                
+                var photoRef = ""
+                var photoWidth = 0
 
+                if((placeDict.object(forKey: "photos")) != nil)
+                {
+                  let photoDict = placeDict["photos"] as? NSArray
+                  let photoDictSub = photoDict?[0] as? NSDictionary
+                  photoRef = photoDictSub?["photo_reference"] as! String
+                  photoWidth = photoDictSub?["width"] as! Int
+                }
+                let openingHours = placeDict["opening_hours"] as! NSDictionary?
+                let open = openingHours?["open_now"] as! Bool
+                
                 
                 let location = CLLocation(latitude: latitude, longitude: longitude)
-                let place = Place(location: location, reference: reference, name: name, address: address, rating: rating, price: price)
+                let place = Place(location: location, reference: reference, name: name, address: address, rating: rating, price: price, photoRefe: photoRef, photoWid: photoWidth, open: open)
                 
                 self.places.append(place)
                 let annotation = PlaceAnnotation(location: place.location!.coordinate, title: place.placeName)

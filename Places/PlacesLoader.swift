@@ -31,6 +31,8 @@ struct restaurantInformation {
   var rating: Double
   var address: String
   var open: Bool
+  var photoString: String
+  var photoWidth: Int
 }
 
 struct PlacesLoader {
@@ -61,15 +63,9 @@ struct PlacesLoader {
             
             
             //////////WHERE THE START OF THE API LOOKING STARTS/////////////////
-            guard let placesArray = responseDict.object(forKey: "results") as? [NSDictionary]  else { return }
+            guard let placesArray = responseDict.object(forKey: "results") as? [[String:Any]]  else { return }
             print (placesArray)
             for placeDict in placesArray {
-             // print(placeDict.allKeys)
-//              var name = ""
-//              var price = ""
-//              var rating = ""
-//              var address = ""
-//              var hours = ""
               print (placeDict)
               print ("")
               if let name = placeDict["name"] as! String?{
@@ -83,14 +79,22 @@ struct PlacesLoader {
                       if let openingHours = placeDict["opening_hours"] as! NSDictionary?{
                         if let open = openingHours["open_now"] as! Bool? {
                           print (open)
-                          let temp = restaurantInformation(name: name, price: price, rating: rating, address: address, open: open)
-                          print (temp)
+                          let photoDict = placeDict["photos"] as? NSArray
+                          let photoDictSub = photoDict?[0] as? NSDictionary
+                          if let photoString = photoDictSub?["photo_reference"] as! String?{
+                            print (photoString)
+                            if let photoWidth = photoDictSub?["width"] as! Int?{
+                              print (photoWidth)
+                              let temp = restaurantInformation(name: name, price: price, rating: rating, address: address, open: open, photoString: photoString, photoWidth: photoWidth)
+                              print (temp)
+                            }
+                          }
                         }
                       }
                     }
                   }
                 }
-              }              
+              }
             }
           //////////////// END OF RETRIEVING STUFF FROM THE API////////////////////
             
@@ -136,5 +140,36 @@ struct PlacesLoader {
     
     dataTask.resume()
 
+  }
+  
+  func loadImg(photoRef: String, photoWid: Int, handler: @escaping (String?, NSError?) -> Void){
+    let uri = "https://maps.googleapis.com/maps/api/place/photo?" + "maxwidth=\(photoWid)&photoreference=\(photoRef)&key=AIzaSyDgt9HpXXLMLEUe5sOWPIXpEHmqgHCEyaw"
+    
+    let url = URL(string: uri)!
+    let session = URLSession(configuration: URLSessionConfiguration.default)
+    let dataTask = session.dataTask(with: url) { data, response, error in
+      if let error = error {
+        print(error)
+      } else if let httpResponse = response as? HTTPURLResponse {
+        if httpResponse.statusCode == 200 {
+          print(data!)
+          
+          do {
+            let responseObject = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+            guard let responseImg = responseObject as? String else {
+              return
+            }
+            
+            handler(responseImg, nil)
+            
+          } catch let error as NSError {
+            handler(nil, error)
+          }
+        }
+      }
+    }
+    
+    dataTask.resume()
+    
   }
 }

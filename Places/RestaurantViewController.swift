@@ -19,11 +19,13 @@ class RestaurantViewController: UIViewController {
   var arViewController: ARViewController!
   var startedLoadingPOIs = false
     //var RatingInt = Double()
-    var PriceInt = Int()
-    var NameString = ""
-    var NumberString = ""
-    var RatingDouble = Double()
-    var Address = ""
+  var PriceInt = Int()
+  var NameString = ""
+  var NumberString = ""
+  var RatingDouble = Double()
+  var Address = ""
+  var photoRef = ""
+  var photoWid = Int()
   
   
   
@@ -47,16 +49,27 @@ class RestaurantViewController: UIViewController {
     //@IBOutlet weak var Rating: UILabel!
   @IBOutlet weak var AddressLabel2: UILabel!
   @IBOutlet weak var Price: UILabel!
-    @IBOutlet weak var Name: UILabel!
-    @IBOutlet weak var Number: UILabel!
-    @IBOutlet weak var Rating: UILabel!
-    @IBOutlet weak var AddressLabel: UILabel!
+  @IBOutlet weak var Name: UILabel!
+  @IBOutlet weak var Number: UILabel!
+  @IBOutlet weak var Rating: UILabel!
+  @IBOutlet weak var AddressLabel: UILabel!
+  @IBOutlet weak var Photo: UIImageView!
   override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
         //Rating.text = String(RatingInt)
-        var price = String(PriceInt)
-      
-     
+    let price = String(PriceInt)
+    
+    let loader = PlacesLoader()
+    loader.loadImg(photoRef: photoRef, photoWid: photoWid){ responseImg, error in
+      if let img = responseImg {
+        print(img)
+      }
+    }
+    //var photoURL
+    //var photoImg = UIImage(named: photoURL)
+    
+    //Photo.image = photoImg
+    
       switch price
       {
       case "1":
@@ -102,6 +115,8 @@ class RestaurantViewController: UIViewController {
     
     myVC.NameString = place.placeName
     myVC.PriceInt = place.placePrice
+    myVC.photoRef = place.photoRef!
+    myVC.photoWid = place.photoWidth!
     //myVC.RatingInt = place.placeRate
     
     if let x = place.phoneNumber{
@@ -182,8 +197,16 @@ extension RestaurantViewController: CLLocationManagerDelegate {
                 }
                 
                 
+                let photoDict = placeDict["photos"] as? NSArray
+                let photoDictSub = photoDict?[0] as? NSDictionary
+                let photoRef = photoDictSub?["photo_reference"] as! String
+                let photoWidth = photoDictSub?["width"] as! Int
+                let openingHours = placeDict["opening_hours"] as! NSDictionary?
+                let open = openingHours?["open_now"] as! Bool
+                
+                
                 let location = CLLocation(latitude: latitude, longitude: longitude)
-                let place = Place(location: location, reference: reference, name: name, address: address, rating: rating, price: price)
+                let place = Place(location: location, reference: reference, name: name, address: address, rating: rating, price: price, photoRefe: photoRef, photoWid: photoWidth, open: open)
                 
                 self.places.append(place)
                 let annotation = PlaceAnnotation(location: place.location!.coordinate, title: place.placeName)

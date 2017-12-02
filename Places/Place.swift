@@ -31,6 +31,9 @@ class Place: ARAnnotation {
   let placePrice: Int
   var phoneNumber: String?
   var website: String?
+  var photoRef: String?
+  var photoWidth: Int?
+  var isOpen: Bool?
   
   var infoText: String {
     get {
@@ -47,10 +50,14 @@ class Place: ARAnnotation {
     }
   }
   
-  init(location: CLLocation, reference: String, name: String, address: String, rating: Double, price: Int) {
+  //init(location: CLLocation, reference: String, name: String, address: String, rating: Double, price: Int) {
+  init(location: CLLocation, reference: String, name: String, address: String, rating: Double, price: Int, photoRefe: String, photoWid: Int, open: Bool) {
     placeName = name
     placeRate = rating
     placePrice = price
+    photoRef = photoRefe
+    photoWidth = photoWid
+    isOpen = open
     self.reference = reference
     self.address = address
     
