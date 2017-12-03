@@ -32,9 +32,12 @@ class ViewController: UIViewController {
   @IBOutlet weak var mapView: MKMapView!
   var arViewController: ARViewController!
   var startedLoadingPOIs = false
+  @IBOutlet weak var logoView: UIView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    NotificationCenter.default.addObserver(self, selector: #selector(ViewController.rotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
     
     locationManager.delegate = self
     locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -43,13 +46,40 @@ class ViewController: UIViewController {
     mapView.userTrackingMode = MKUserTrackingMode.followWithHeading
   }
   
+  func rotated() {
+    if UIDevice.current.orientation.isFlat {
+      print("IM FLAT")
+      if (arViewController != nil) {
+        print("CLOSE ME")
+        arViewController.dismiss(animated: true, completion: nil)
+      }
+    }
+    else {
+      print("NOT FACEdown/up")
+      showARController(nil)
+    }
+  }
+  
+//  override func viewDidAppear(_ animated: Bool) {
+//    super.viewDidAppear(animated)
+//
+//    if self.isBeingPresented || self.isMovingToParentViewController {
+//      showARController(nil)
+//    }
+//  }
+
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
   
-
-  @IBAction func showARController(_ sender: Any) {
+  @IBAction func hideView(_ sender: Any?) {
+    if (logoView != nil) {
+      logoView.isHidden = true
+    }
+  }
+  
+  @IBAction func showARController(_ sender: Any?) {
     arViewController = ARViewController()
     arViewController.dataSource = self
     arViewController.maxDistance = 0
@@ -159,8 +189,10 @@ extension ViewController: CLLocationManagerDelegate {
                   photoWidth = photoDictSub?["width"] as! Int
                 }
                 let openingHours = placeDict["opening_hours"] as! NSDictionary?
-                let open = openingHours?["open_now"] as! Bool
-                
+                var open = false
+                if (openingHours?["open_now"] != nil) {
+                  open = openingHours?["open_now"] as! Bool
+                }
                 
                 let location = CLLocation(latitude: latitude, longitude: longitude)
                 let place = Place(location: location, reference: reference, name: name, address: address, rating: rating, price: price, photoRefe: photoRef, photoWid: photoWidth, open: open)

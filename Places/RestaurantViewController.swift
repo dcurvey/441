@@ -42,7 +42,7 @@ class RestaurantViewController: UIViewController {
     arViewController.trackingManager.reloadDistanceFilter = 75
     arViewController.setAnnotations(places)
     arViewController.uiOptions.debugEnabled = false
-    arViewController.uiOptions.closeButtonEnabled = true
+    arViewController.uiOptions.closeButtonEnabled = false
     
     self.present(arViewController, animated: true, completion: nil)
   }

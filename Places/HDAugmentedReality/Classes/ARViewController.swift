@@ -228,7 +228,6 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
     
     fileprivate func onViewDidAppear()
     {
-        
     }
     
     fileprivate func onViewDidDisappear()
