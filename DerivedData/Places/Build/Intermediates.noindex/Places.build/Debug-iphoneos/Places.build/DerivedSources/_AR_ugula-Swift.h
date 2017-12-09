@@ -419,6 +419,7 @@ SWIFT_CLASS("_TtC9_AR_ugula14AnnotationView")
 SWIFT_CLASS("_TtC9_AR_ugula11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
+@property (nonatomic) NSInteger hello;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
@@ -458,8 +459,9 @@ SWIFT_CLASS("_TtC9_AR_ugula5Place")
 @property (nonatomic, readonly) NSInteger placePrice;
 @property (nonatomic, copy) NSString * _Nullable phoneNumber;
 @property (nonatomic, copy) NSString * _Nullable website;
+@property (nonatomic, copy) NSString * _Nullable photoRef;
 @property (nonatomic, readonly, copy) NSString * _Nonnull infoText;
-- (nonnull instancetype)initWithLocation:(CLLocation * _Nonnull)location reference:(NSString * _Nonnull)reference name:(NSString * _Nonnull)name address:(NSString * _Nonnull)address rating:(double)rating price:(NSInteger)price OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithLocation:(CLLocation * _Nonnull)location reference:(NSString * _Nonnull)reference name:(NSString * _Nonnull)name address:(NSString * _Nonnull)address rating:(double)rating price:(NSInteger)price photoRefe:(NSString * _Nonnull)photoRefe photoWid:(NSInteger)photoWid open:(BOOL)open OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
@@ -473,19 +475,51 @@ SWIFT_CLASS("_TtC9_AR_ugula15PlaceAnnotation")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
+@class UIImageView;
 
 SWIFT_CLASS("_TtC9_AR_ugula24RestaurantViewController")
 @interface RestaurantViewController : UIViewController
+@property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
+@property (nonatomic, strong) ARViewController * _Null_unspecified arViewController;
+@property (nonatomic) BOOL startedLoadingPOIs;
 @property (nonatomic) NSInteger PriceInt;
 @property (nonatomic, copy) NSString * _Nonnull NameString;
 @property (nonatomic, copy) NSString * _Nonnull NumberString;
+@property (nonatomic) double RatingDouble;
+@property (nonatomic, copy) NSString * _Nonnull Address;
+@property (nonatomic, copy) NSString * _Nonnull photoRef;
+@property (nonatomic) NSInteger photoWid;
+@property (nonatomic) BOOL openBool;
+- (IBAction)LaunchAr:(id _Nonnull)sender;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Open;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified AddressLabel2;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Price;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Name;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Number;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Rating;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified AddressLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified Photo;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)showInfoViewForPlace:(Place * _Nonnull)place;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface RestaurantViewController (SWIFT_EXTENSION(_AR_ugula)) <ARDataSource>
+- (ARAnnotationView * _Nonnull)ar:(ARViewController * _Nonnull)arViewController viewForAnnotation:(ARAnnotation * _Nonnull)viewForAnnotation SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface RestaurantViewController (SWIFT_EXTENSION(_AR_ugula))
+- (void)didTouchWithAnnotationView:(AnnotationView * _Nonnull)annotationView;
+@end
+
+
+@interface RestaurantViewController (SWIFT_EXTENSION(_AR_ugula)) <CLLocationManagerDelegate>
+- (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager * _Nonnull)manager SWIFT_WARN_UNUSED_RESULT;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 @end
 
 
@@ -499,9 +533,12 @@ SWIFT_CLASS("_TtC9_AR_ugula14ViewController")
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic, strong) ARViewController * _Null_unspecified arViewController;
 @property (nonatomic) BOOL startedLoadingPOIs;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified logoView;
 - (void)viewDidLoad;
+- (void)rotated;
 - (void)didReceiveMemoryWarning;
-- (IBAction)showARController:(id _Nonnull)sender;
+- (IBAction)hideView:(id _Nullable)sender;
+- (IBAction)showARController:(id _Nullable)sender;
 - (void)showInfoViewForPlace:(Place * _Nonnull)place;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

@@ -419,6 +419,7 @@ SWIFT_CLASS("_TtC9_AR_ugula14AnnotationView")
 SWIFT_CLASS("_TtC9_AR_ugula11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
+@property (nonatomic) NSInteger hello;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
@@ -532,9 +533,12 @@ SWIFT_CLASS("_TtC9_AR_ugula14ViewController")
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic, strong) ARViewController * _Null_unspecified arViewController;
 @property (nonatomic) BOOL startedLoadingPOIs;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified logoView;
 - (void)viewDidLoad;
+- (void)rotated;
 - (void)didReceiveMemoryWarning;
-- (IBAction)showARController:(id _Nonnull)sender;
+- (IBAction)hideView:(id _Nullable)sender;
+- (IBAction)showARController:(id _Nullable)sender;
 - (void)showInfoViewForPlace:(Place * _Nonnull)place;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

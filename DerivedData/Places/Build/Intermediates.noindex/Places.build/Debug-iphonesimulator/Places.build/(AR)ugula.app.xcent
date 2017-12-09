@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>CNDLA75X23.com.Places.test</string>
+	<string>4PHLDCA6RC.com.arugula.arugula</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>CNDLA75X23.com.Places.test</string>
+		<string>4PHLDCA6RC.com.arugula.arugula</string>
 	</array>
 </dict>
 </plist>

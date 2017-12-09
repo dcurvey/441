@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65.2 clang-900.0.37)"
 options: "51bdcf5272fbbd71265bf6d4a1a2c7db"
-build_time: [1512234406, 951526000]
+build_time: [1512234907, 289433000]
 inputs:
   "/Users/Aren/Downloads/Places/Places/HDAugmentedReality/Classes/ARViewController.swift": [1510087722, 0]
   "/Users/Aren/Downloads/Places/Places/AnnotationView.swift": [1510088637, 0]
@@ -14,4 +14,4 @@ inputs:
   "/Users/Aren/Downloads/Places/Places/Place.swift": [1512231680, 0]
   "/Users/Aren/Downloads/Places/Places/HDAugmentedReality/Classes/ARConfiguration.swift": [1476507906, 0]
   "/Users/Aren/Downloads/Places/Places/AppDelegate.swift": [1477902401, 0]
-  "/Users/Aren/Downloads/Places/Places/RestaurantViewController.swift": [1512234406, 0]
+  "/Users/Aren/Downloads/Places/Places/RestaurantViewController.swift": [1512234906, 0]

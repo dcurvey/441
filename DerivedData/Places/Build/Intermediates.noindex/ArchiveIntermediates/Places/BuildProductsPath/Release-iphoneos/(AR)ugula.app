@@ -1,0 +1,1 @@
+/Users/Aren/Downloads/Places/DerivedData/Places/Build/Intermediates.noindex/ArchiveIntermediates/Places/InstallationBuildProductsLocation/Applications/(AR)ugula.app

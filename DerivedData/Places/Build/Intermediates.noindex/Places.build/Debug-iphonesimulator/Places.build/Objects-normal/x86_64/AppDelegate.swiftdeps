@@ -12,6 +12,7 @@ provides-dynamic-lookup:
 - "applicationWillEnterForeground"
 - "applicationWillResignActive"
 - "applicationWillTerminate"
+- "hello"
 - "window"
 depends-top-level:
 - "AppDelegate"
@@ -40,6 +41,7 @@ depends-member:
 - ["9_AR_ugula11AppDelegateC", "applicationWillResignActive"]
 - ["9_AR_ugula11AppDelegateC", "applicationWillTerminate"]
 - ["9_AR_ugula11AppDelegateC", "deinit"]
+- ["9_AR_ugula11AppDelegateC", "hello"]
 - ["9_AR_ugula11AppDelegateC", "init"]
 - ["9_AR_ugula11AppDelegateC", "window"]
 - ["s7CVarArgP", "application"]
@@ -133,6 +135,7 @@ depends-member:
 - ["So8NSObjectC", "applicationWillEnterForeground"]
 - ["So8NSObjectC", "applicationWillResignActive"]
 - ["So8NSObjectC", "applicationWillTerminate"]
+- ["So8NSObjectC", "hello"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "window"]
 - ["So16NSObjectProtocolP", "application"]
@@ -195,6 +198,7 @@ depends-member:
 - ["So11UIResponderC", "applicationWillEnterForeground"]
 - ["So11UIResponderC", "applicationWillResignActive"]
 - ["So11UIResponderC", "applicationWillTerminate"]
+- ["So11UIResponderC", "hello"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "window"]
 - ["So11UIResponderC", ""]
@@ -275,4 +279,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "b306772a10463f7c5fce689aa6452f8e"
+interface-hash: "3a599c885fd32f6718523f2b0d9f428d"

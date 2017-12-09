@@ -19,6 +19,7 @@ depends-top-level:
 - !private "HTTPURLResponse"
 - "Int"
 - !private "JSONSerialization"
+- !private "NSArray"
 - "NSDictionary"
 - "NSError"
 - "Place"
@@ -50,6 +51,7 @@ depends-member:
 - !private ["s7CVarArgP", "statusCode"]
 - !private ["s7CVarArgP", "subscript"]
 - ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
 - ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "coordinate"]
 - !private ["s28CustomDebugStringConvertibleP", "dataTask"]
@@ -80,8 +82,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s10DictionaryV", "subscript"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "allowFragments"]
 - !private ["s9EquatableP", "coordinate"]
@@ -95,6 +100,7 @@ depends-member:
 - !private ["s9EquatableP", "statusCode"]
 - !private ["s9EquatableP", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "allowFragments"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "object"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
@@ -117,6 +123,7 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
+- !private ["So7NSArrayC", "subscript"]
 - !private ["So8NSCodingP", "coordinate"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "object"]
@@ -172,10 +179,11 @@ depends-member:
 - !private ["9_AR_ugula12PlacesLoaderV", "HTTPURLResponse"]
 - ["9_AR_ugula12PlacesLoaderV", "Int"]
 - !private ["9_AR_ugula12PlacesLoaderV", "JSONSerialization"]
+- !private ["9_AR_ugula12PlacesLoaderV", "NSArray"]
 - ["9_AR_ugula12PlacesLoaderV", "NSDictionary"]
 - ["9_AR_ugula12PlacesLoaderV", "NSError"]
 - ["9_AR_ugula12PlacesLoaderV", "Place"]
-- !private ["9_AR_ugula12PlacesLoaderV", "String"]
+- ["9_AR_ugula12PlacesLoaderV", "String"]
 - !private ["9_AR_ugula12PlacesLoaderV", "URL"]
 - !private ["9_AR_ugula12PlacesLoaderV", "URLSession"]
 - !private ["9_AR_ugula12PlacesLoaderV", "URLSessionConfiguration"]
@@ -184,6 +192,7 @@ depends-member:
 - ["9_AR_ugula12PlacesLoaderV", "apiURL"]
 - ["9_AR_ugula12PlacesLoaderV", "init"]
 - ["9_AR_ugula12PlacesLoaderV", "loadDetailInformation"]
+- ["9_AR_ugula12PlacesLoaderV", "loadImg"]
 - ["9_AR_ugula12PlacesLoaderV", "loadPOIS"]
 - !private ["9_AR_ugula12PlacesLoaderV", "print"]
 - !private ["9_AR_ugula12PlacesLoaderV", "restaurantInformation"]
@@ -217,7 +226,9 @@ depends-member:
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "subscript"]
 - ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "coordinate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
@@ -232,6 +243,7 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "latitude"]
 - !private ["s21_ObjectiveCBridgeableP", "longitude"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 - ["9_AR_ugula21restaurantInformationV", "Bool"]
@@ -242,6 +254,8 @@ depends-member:
 - ["9_AR_ugula21restaurantInformationV", "init"]
 - ["9_AR_ugula21restaurantInformationV", "name"]
 - ["9_AR_ugula21restaurantInformationV", "open"]
+- ["9_AR_ugula21restaurantInformationV", "photoString"]
+- ["9_AR_ugula21restaurantInformationV", "photoWidth"]
 - ["9_AR_ugula21restaurantInformationV", "price"]
 - ["9_AR_ugula21restaurantInformationV", "rating"]
 depends-nominal:
@@ -258,6 +272,7 @@ depends-nominal:
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "s9DecodableP"
+- !private "s10DictionaryV"
 - "s9EncodableP"
 - "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
@@ -271,6 +286,7 @@ depends-nominal:
 - !private "So17JSONSerializationC"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
+- !private "So7NSArrayC"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - !private "So12NSDictionaryC"
@@ -339,4 +355,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
-interface-hash: "e857f51327de21e066c7378d09693b37"
+interface-hash: "cd5578ed0c60504802033fea23f42bfc"
